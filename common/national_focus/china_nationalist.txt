@@ -1,0 +1,53 @@
+﻿focus_tree = {
+	id = china_nationalist_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1000 }
+	
+	shared_focus = CHI_invite_foreign_investors
+
+	focus = {
+		id = CHI_three_principles_of_the_people
+		icon = GFX_goal_generic_national_unity
+		x = 5
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+}
