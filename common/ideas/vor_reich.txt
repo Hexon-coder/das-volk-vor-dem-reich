@@ -46,6 +46,28 @@ ideas = {
 			}
 		}
 		
+		dual_monarchy_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = HUN_hungarian_monarchy_habsburg
+			
+			modifier = {
+				stability_weekly = -0.001
+				surrender_limit = -0.01
+				offensive_war_stability_factor = -0.01
+				planning_speed = -0.01
+			}
+		}
+		
 		trial_monarchy = {
 			
 			allowed = {
@@ -107,7 +129,28 @@ ideas = {
 			modifier = {
 			stability_weekly = -0.005
 			}
-		}		
+		}	
 
+		military_plot = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = gfx_idea_general_staff
+			
+			modifier = {
+				stability_weekly = -0.005
+				surrender_limit = -0.3
+				offensive_war_stability_factor = -0.05
+				planning_speed = -0.05
+			}
+		}			
 	}
 }
