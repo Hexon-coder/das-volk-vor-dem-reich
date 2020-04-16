@@ -3217,9 +3217,3 @@
  lar_test.1.d:0 "TODO_LAR_BC: this is a test\nThis:[This.GetName]\nFrom:[From.GetName]\nFrom.From:[From.From.GetName]\nRoot:[Root.GetName]\n"
  lar_collab_gov.1.t:0 "[From.GetAdjective] Partisans in [Root.GetNameDef]"
  #
- bh.1.t:0 "Karls speach"
- bh.1.d:0 "King Karl holds a long speach of how he was and is being unfairly treated by the people inside and outside his borders."
- bh.1.a:0 "May god protect us all."
- bh.2.t:0 "Bohemian-hungarian situation."
- bh.2.d:0 "After the war the members of the Jagow Pact decided to divide austria-hungary, Germany got German majority areas, Russia got Galicia and Serbia got yugoslavia. Due to their low representation in government and karls advisers taking more of a hardlined approach to dealing with rebellious people, the minorities in Bohemia-Hungary are closer than ever to rebelling.In Transylvania a new issue was sprawling, the Iron guard. Since their ascension to ruling in Romania they’ve been keen on taking back their “rightful soil”. So after they stabilised Romania they went out on the offensive for transylvania. First it was a diplomatic blockade on Bohemia-Hungary and later devolved into small skirmishes. This led to the yet ongoing Transylvanian crisis."
- bh.2.a:0 "Why."
