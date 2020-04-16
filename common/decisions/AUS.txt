@@ -1,0 +1,337 @@
+aus_pass_reforms = {
+	
+	aus_mission_pass_reform_1 = {
+		cost = 10	
+		Fire_only_once = yes
+		
+		visible = {
+		has_country_flag = flag_numba_1_to_activate_dicisions
+		}
+
+		allowed = {
+			tag = AUS
+		}
+		
+		complete_effect = {
+		set_country_flag = AUS_Flag_1_reforms
+		add_political_power = 10
+		add_stability = 0.05
+		}
+	}
+	
+	aus_mission_pass_reform_2 = {
+		cost = 30
+		Fire_only_once = yes
+		
+		visible = {
+		has_country_flag = flag_numba_1_to_activate_dicisions
+		}
+
+		allowed = {
+			tag = AUS
+		}
+		
+		complete_effect = {
+		set_country_flag = AUS_Flag_2_reforms
+		add_political_power = 10
+		add_stability = 0.05
+		}
+	}
+	
+	aus_mission_pass_reform_3 = {
+		cost = 30
+		Fire_only_once = yes
+		
+		visible = {
+		has_country_flag = flag_numba_1_to_activate_dicisions
+		}
+
+		allowed = {
+			tag = AUS
+		}
+		
+		complete_effect = {
+		set_country_flag = AUS_Flag_3_reforms
+		add_political_power = 10
+		add_stability = 0.05
+		}
+	}
+
+	aus_mission_pass_reform_4 = {
+		cost = 30
+		Fire_only_once = yes
+		
+		visible = {
+		has_country_flag = flag_numba_1_to_activate_dicisions
+		add_political_power = 10
+		add_stability = 0.05
+		}
+
+		allowed = {
+			tag = AUS
+		}
+		
+		complete_effect = {
+		set_country_flag = AUS_Flag_4_reforms
+		add_political_power = 10
+		add_stability = 0.05
+		}
+	}
+	
+	aus_mission_pass_reform_5 = {
+		cost = 50
+		Fire_only_once = yes
+		
+		visible = {
+		has_country_flag = flag_numba_1_to_activate_dicisions
+		}
+
+		allowed = {
+			tag = AUS
+		}
+		
+		complete_effect = {
+		set_country_flag = AUS_Flag_5_reforms
+		add_political_power = 10
+		add_stability = 0.05
+		}
+	}
+	
+	aus_mission_pass_reform_6 = {
+		cost = 50
+		Fire_only_once = yes
+		
+		visible = {
+		has_country_flag = flag_numba_1_to_activate_dicisions
+		}
+
+		allowed = {
+			tag = AUS
+		}
+		
+		complete_effect = {
+		set_country_flag = AUS_Flag_6_reforms
+		add_political_power = 10
+		add_stability = 0.05
+		AUS = { country_event = { id = bh.3 days = 25 } }
+		}
+	}
+	
+	aus_mission_pass_reform_7 = {
+		cost = 10
+		Fire_only_once = yes
+		
+		visible = {
+		has_country_flag = flag_numba_1_to_activate_dicisions
+		}
+		
+		allowed = {
+			tag = AUS
+		}
+		
+		complete_effect = {
+		set_country_flag = AUS_Flag_7_reforms
+		add_political_power = 10
+		add_stability = 0.05
+		}
+	}
+	
+	aus_mission_pass_reform_8 = {
+		cost = 65
+		Fire_only_once = yes
+		
+		visible = {
+		has_country_flag = flag_numba_1_to_activate_dicisions
+
+		}
+
+		allowed = {
+			tag = AUS
+		}
+		
+		complete_effect = {
+		set_country_flag = AUS_Flag_8_reforms
+		add_political_power = 10
+		add_stability = 0.05
+		}
+	}
+	
+	aus_mission_pass_reform_9 = {
+		cost = 75
+		Fire_only_once = yes
+		
+		visible = {
+		has_country_flag = flag_numba_1_to_activate_dicisions
+		}
+
+		allowed = {
+			tag = AUS
+		}
+		
+		complete_effect = {
+		set_country_flag = AUS_Flag_9_reforms
+		add_political_power = 10
+		add_stability = 0.05
+		}
+	}
+	
+	aus_mission_pass_reform_10 = {
+		cost = 75
+		Fire_only_once = yes
+		
+		visible = {
+		has_country_flag = flag_numba_1_to_activate_dicisions
+		}
+
+		allowed = {
+			tag = AUS
+		}
+		
+		complete_effect = {
+		set_country_flag = AUS_Flag_10_reforms
+		add_political_power = 10
+		add_stability = 0.05
+		}
+	}
+	
+	aus_mission_pass_reform_final = {
+		cost = 75
+		Fire_only_once = yes
+		
+		visible = {
+		has_country_flag = AUS_Flag_1_reforms
+		has_country_flag = AUS_Flag_2_reforms
+		has_country_flag = AUS_Flag_3_reforms
+		has_country_flag = AUS_Flag_4_reforms
+		has_country_flag = AUS_Flag_5_reforms
+		has_country_flag = AUS_Flag_6_reforms
+		has_country_flag = AUS_Flag_7_reforms
+		has_country_flag = AUS_Flag_8_reforms
+		has_country_flag = AUS_Flag_9_reforms
+		has_country_flag = AUS_Flag_10_reforms
+		}
+
+		allowed = {
+			tag = AUS
+		}
+		
+		complete_effect = {
+		clr_country_flag = AUS_Flag_1_reforms
+		clr_country_flag = AUS_Flag_2_reforms
+		clr_country_flag = AUS_Flag_3_reforms
+		clr_country_flag = AUS_Flag_4_reforms
+		clr_country_flag = AUS_Flag_5_reforms
+		clr_country_flag = AUS_Flag_6_reforms
+		clr_country_flag = AUS_Flag_7_reforms
+		clr_country_flag = AUS_Flag_8_reforms
+		clr_country_flag = AUS_Flag_9_reforms
+		clr_country_flag = AUS_Flag_10_reforms
+		clr_country_flag = flag_numba_1_to_activate_dicisions
+		add_political_power = 100
+		add_stability = -0.5
+		}
+	}	
+}
+
+aus_military_coup_category = {
+
+	aus_coup_days_left = {
+		
+		available = {
+				tag = AUS
+			}
+		
+		visible = {
+				has_idea = military_plot
+				has_country_flag = aus_not_start_coup
+		}
+		
+		activation = {
+				has_idea = military_plot
+				has_country_flag = aus_not_start_coup
+		}
+		
+		days_mission_timeout = 105
+		
+		timeout_effect = {
+			AUS = { country_event = { id = bh.4 days 5 } }
+		}
+	}
+	
+	aus_coup_read_papers = {
+		cost = 10
+		Fire_only_once = yes
+		
+		available = {
+			tag = AUS	
+			}
+		
+		visible = {
+				has_idea = military_plot
+				has_country_flag = aus_not_start_coup
+		}
+		
+		complete_effect = {
+			AUS = { country_event = { id = bh.5 days = 5 } }
+		}
+	}
+	
+	aus_coup_investigate_soldiers = {
+		cost = 30
+		Fire_only_once = yes
+		
+		available = {
+			tag = AUS	
+			}
+		
+		visible = {
+				has_idea = military_plot
+				has_country_flag = aus_not_start_coup
+				has_country_flag = aus_stop_coup_1
+		}
+		
+		complete_effect = {
+			AUS = { country_event = { id = bh.5 days = 5 } }
+		}
+	}
+	
+	aus_coup_arrest_generals = {
+		cost = 30
+		Fire_only_once = yes
+		
+		available = {
+			tag = AUS	
+			}
+		
+		visible = {
+				has_idea = military_plot
+				has_country_flag = aus_not_start_coup
+				has_country_flag = aus_stop_coup_1
+		}
+		
+		complete_effect = {
+			AUS = { country_event = { id = bh.9 days = 5 } }
+		}
+	}
+	
+	aus_coup_destroy_coup = {
+		cost = 75
+		Fire_only_once = yes
+		
+		available = {
+			tag = AUS	
+			}
+		
+		visible = {
+				has_idea = military_plot
+				has_country_flag = aus_not_start_coup
+				has_country_flag = aus_stop_coup_1
+				has_country_flag = aus_stop_coup_2
+				has_country_flag = aus_stop_coup_3
+		}
+		
+		complete_effect = {
+			AUS = { country_event = { id = bh.11 days = 5 } }
+		}
+	}
+}
