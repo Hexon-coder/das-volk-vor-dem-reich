@@ -1,4 +1,4 @@
-add_namespace = Bohemia-Hungary
+add_namespace = bh
 
 news_event = {
 	id = bh.1 
@@ -12,7 +12,7 @@ news_event = {
 		name = bh.1.a
 	}
 }
-#
+
 news_event = {
 	id = bh.2 
 	title = bh.2.t
@@ -23,5 +23,232 @@ news_event = {
 
 	option = {
 		name = bh.2.a
+	}
+}
+
+country_event = {
+	id = bh.3
+	title = bh.3.t
+	desc = bh.3.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = { #coup start
+		name = bh.3.a #yes
+		ai_chance = {
+			factor = 80
+		}
+		
+		hidden_effect = {
+			add_ideas = military_plot
+		}
+	}
+	
+	option = {
+		name = bh.3.b #yes
+		ai_chance = {
+			factor = 20
+		}
+		hidden_effect = {
+			AUS = { country_event = { id = bh.4 days = 105 } }
+		}
+	}
+}
+
+country_event = { #coup happened
+	id = bh.4
+	title = bh.4.t
+	desc = bh.4.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bh.4.a #yes
+		ai_chance = {
+			factor = 80
+		}
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+country_event = { #read papers
+	id = bh.5
+	title = bh.5.t
+	desc = bh.5.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bh.5.a #yes
+		ai_chance = {
+			factor = 90
+		}
+		
+		hidden_effect = {
+			AUS = { country_event = { id = bh.6 days = 5 } }
+		}
+	}
+	
+	option = {
+		name = bh.5.b #no
+		ai_chance = {
+			factor = 10
+		}
+		
+		hidden_effect = {
+			AUS = { country_event = { id = bh.4 days = 35 } }
+		}
+	}
+}
+
+country_event = { #you read papers
+	id = bh.6
+	title = bh.6.t
+	desc = bh.6.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bh.6.a #read
+		ai_chance = {
+			factor = 90
+		}
+		
+		hidden_effect = {
+			set_country_flag = aus_stop_coup_1
+		}
+	}
+}
+
+country_event = { #Investigate soldier 1
+	id = bh.7
+	title = bh.7.t
+	desc = bh.7.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bh.7.a #question him
+		ai_chance = {
+			factor = 90
+		}
+		
+		hidden_effect = {
+			AUS = { country_event = { id = bh.8 days = 15 } }
+		}
+	}
+	
+	option = {
+		name = bh.7.b #dont question him
+		ai_chance = {
+			factor = 90
+		}
+		
+		hidden_effect = {
+			AUS = { country_event = { id = bh.4 days = 70 } }
+		}
+	}
+}
+
+country_event = { #Investigate soldier 2
+	id = bh.8
+	title = bh.8.t
+	desc = bh.8.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bh.8.a #Information
+		ai_chance = {
+			factor = 90
+		}
+		
+		hidden_effect = {
+			set_country_flag = aus_stop_coup_2
+		}
+	}
+}
+
+country_event = { #arrest generals
+	id = bh.9
+	title = bh.9.t
+	desc = bh.9.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bh.9.a #arrest
+		ai_chance = {
+			factor = 90
+		}
+		
+		hidden_effect = {
+			AUS = { country_event = { id = bh.10 days = 5 } }
+		}
+	}
+	
+	option = {
+		name = bh.9.b #don't arrest
+		ai_chance = {
+			factor = 90
+		}
+		
+		hidden_effect = {
+			AUS = { country_event = { id = bh.4 days = 10 } }
+		}
+	}
+}
+
+country_event = { #arrest generals 2
+	id = bh.10
+	title = bh.10.t
+	desc = bh.10.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bh.10.a #info
+		ai_chance = {
+			factor = 90
+		}
+		
+		hidden_effect = {
+			set_country_flag = aus_stop_coup_3
+		}
+	}
+}
+
+country_event = { #topple the coup
+	id = bh.11
+	title = bh.11.t
+	desc = bh.11.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bh.11.a #dew it
+		ai_chance = {
+			factor = 90
+		}
+		
+		hidden_effect = {
+			clr_country_flag = aus_not_start_coup
+			remove_ideas = military_plot
+			clr_country_flag = aus_stop_coup_1
+			clr_country_flag = aus_stop_coup_2
+			clr_country_flag = aus_stop_coup_3
+		}
 	}
 }
