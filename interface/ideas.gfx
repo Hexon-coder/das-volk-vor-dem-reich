@@ -4485,6 +4485,20 @@ spriteTypes = {
 		name = "GFX_idea_angry_nationalists"
 		texturefile = "gfx/interface/ideas/angry_nationalists.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_unstable_goverment"
+		texturefile = "gfx/interface/ideas/unstable_goverment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_pro_nationalist_army"
+		texturefile = "gfx/interface/ideas/national_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_impending_crackdown"
+		texturefile = "gfx/interface/ideas/impending_crackdown.dds"
+	}
 }
 
 
