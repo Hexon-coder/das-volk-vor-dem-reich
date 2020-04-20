@@ -47,7 +47,7 @@
  anarchism_desc:0 "Anarchism is the rejection of authority itself, promoting the division of society into self-managing and self-governing collectives instead of a singular, centralized state."
  GER_fascism_party:0 "NSDAP"
  GER_fascism_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei"
- GER_communism_party:0 "KPD"
+ GER_communism_party:0 "SPD"
  GER_democratic_party:1 "Zentrum"
  GER_neutrality_party_civil_war:0 "Militärregierung"
  GER_neutrality_party_kaiserreich:0 "DNVP"
