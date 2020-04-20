@@ -160,9 +160,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Konrad Adenauer"
+	name = "Wilhelm II"
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
-	picture = "Portrait_Germany_Konrad_Adenauer.dds"
+	picture = "Portrait_Wilhelm_II_Germany.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -170,9 +170,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Wilhelm Pieck"
+	name = "Wilhelm II"
 	desc = "POLITICS_WILHELM_PIECK_DESC"
-	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
+	picture = "Portrait_Wilhelm_II_Germany.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
