@@ -14,8 +14,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				drift_defence_factor = 0.5
-				add_opinion_modifier = { target = AUS modifier = large_decrease }
+				drift_defence_factor = -0.5
+				training_time_factor = -0.3
 			}
 			rule = {
 				can_create_factions = yes
