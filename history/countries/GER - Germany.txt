@@ -1,6 +1,7 @@
 ﻿capital = 64
 
 oob = "GER_1936"
+add_opinion_modifier = { target = AUS modifier = large_decrease }
 
 puppet = DES
 puppet = GAF
