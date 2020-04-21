@@ -1,0 +1,77 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = german_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	
+	default = no
+
+	###################### Political Tree #####################
+
+	###################### Communist Uprising #################
+
+	focus = {
+		id = GER_political_advancment
+		icon = GFX_goal_generic_forceful_treaty
+		x = 8
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = GER_communists_will_rise_again
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = GER_political_advancment }
+		x = 5
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 70
+	democratic = 25
+	communism = 5
+	}
+		}
+	}
+
+	focus = {
+		id = GER_for_the_kpd
+		icon = GFX_goal_support_fourth_int
+		prerequisite = { focus = GER_communists_will_rise_again }
+		x = 4
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		country_event = { id = germany.129 }
+		}
+	}
+}
