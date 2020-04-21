@@ -6192,125 +6192,19 @@ country_event = {
 	}
 }
 
-#rename city
-country_event = {
-	id = germany.999
-	title = germany.999.t
-	desc = germany.999.desc
-	picture = GFX_report_event_german_reichstag_gathering
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = GER
-		GER = {
-			has_government = fascism
-			owns_state = 217 
-			owns_state = 195 
-		}
-	}
-
-	option = { #a great idea!
-		name = germany.999.a
-		ai_chance = {
-			base = 100
-		}
-		set_province_name = { id = 3529 name = "Hindenburg"}
-		set_province_name = { id = 3151 name = "Ludendorff"}
-		set_global_flag = GER_cities_renamed
-	}
-
-	option = { #rather not
-		name = germany.999.b
-		ai_chance = {
-			base = 0
-		}
-		add_stability = -0.05 #because fuck you
-							  #language
-	}
-
-}
-
-#reset city name if retaken
-country_event = {
-	id = germany.1000
-	title = germany.1000.t
-	desc = germany.1000.desc
-	picture = GFX_report_event_german_reichstag_gathering
-
-	hidden = yes
-
-	trigger = {
-		SOV = {
-			has_government = communism
-			owns_state = 217 
-			owns_state = 195 
-		}
-		OR = {
-			has_global_flag = GER_cities_renamed
-			has_global_flag = ROM_king_is_silly
-		}
-	}
-
-	mean_time_to_happen = { days = 2 }
-
-	option = { #a great idea!
-		name = germany.1000.a
-		ai_chance = {
-			base = 100
-		}
-		reset_province_name = 3529
-		reset_province_name = 3151
-		clr_global_flag = GER_cities_renamed
-		clr_global_flag = ROM_king_is_silly
-	}
-}
-
-#remove MEFO bills
-country_event = {
-	id = germany.1001
-	title = germany.1001.t
-	desc = germany.1001.desc
-	picture = GFX_report_event_german_reichstag_gathering
-
-	hidden = yes
-
-	trigger = {
-		original_tag = GER
-		GER_has_mefo_bills = yes
-		any_other_country = {
-			has_war_with = GER
-			NOT = { original_tag = GER }
-		}
-	}
-
-	mean_time_to_happen = { days = 2 }
-
-	option = { #remove MEFO
-		name = germany.1001.a
-		ai_chance = {
-			base = 100
-		}
-		ROOT = {
-			GER_remove_mefo_bills = yes
-			set_country_flag = mefo_bills_removed_through_war
-		}
-	}
-}
-
 #############################Modding######################
 
 country_event = {
-	id = germany.1002
-	title = germany.1002.t
-	desc = germany.1002.d
+	id = germany.129
+	title = germany.129.t
+	desc = germany.129.d
 	picture = GFX_report_event_german_reichstag_gathering
 	
 
 	is_triggered_only = yes
 	
 	option = {
-		name = germany.1002.a
+		name = germany.129.a
 		add_ideas = triumphant_will
 		}
 }
