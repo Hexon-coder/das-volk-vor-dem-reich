@@ -3123,3 +3123,6 @@
  TUR_authoritarianism:0 "Ottoman Empire"
  TUR_authoritarianism_DEF:0 "the Ottoman Empire"
  TUR_authoritarianism_ADJ:0 "Ottoman"
+ CHI_authoritarianism:0 "Qing"
+ CHI_authoritarianism_ADJ:0 "Qing"
+ CHI_authoritarianism_DEF:0 "the Qing Dynasty"

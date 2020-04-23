@@ -1,0 +1,27 @@
+﻿add_namespace = qing
+
+country_event = {
+	id = qing.1
+	title = qing.1.t
+	desc = qing.1.d
+	picture = GFX_news_event_024
+
+	is_triggered_only = yes
+	
+	option = {
+		name = qing.1.a #aye
+		ai_will_do = {
+			factor = 2
+		}
+		ENG = {
+			add_to_faction = CHI
+		}
+	}
+	
+	option = {
+		name = qing.1.b #nay
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

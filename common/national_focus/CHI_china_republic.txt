@@ -1,0 +1,1079 @@
+focus_tree = {
+	id = china_republic
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	#Focus for Advisory Council
+	focus = {
+		id = CHI_advisory_council
+		icon = GFX_focus_generic_monarchy_1
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_centralization }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_ideas = {
+				advisory_council
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sino-German Cooperation
+	focus = {
+		id = CHI_sinogerman_cooperation
+		icon = Placeholder
+		x = 20
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_mandate_of_heaven }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for German Military Advisors
+	focus = {
+		id = CHI_german_military_advisors
+		icon = GFX_goal_generic_special_forces
+		x = 22
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CHI_sinogerman_cooperation 
+		}
+		prerequisite = { 
+			focus = CHI_reorganize_the_military 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_ideas = german_military_advisors
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Officer Training
+	focus = {
+		id = CHI_officer_training
+		icon = GFX_focus_generic_military_mission
+		x = 23
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_mandate_of_heaven }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			army_experience = 40
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for National Security Council
+	focus = {
+		id = CHI_national_security_council
+		icon = Placeholder
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CHI_judicial_yuan 
+		}
+		prerequisite = { 
+			focus = CHI_executive_yuan 
+		}
+		prerequisite = { 
+			focus = CHI_examination_yuan 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_ideas = national_security_council
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Centralization
+	focus = {
+		id = CHI_centralization
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 14
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_mandate_of_heaven }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = centralization
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Judicial Yuan
+	focus = {
+		id = CHI_judicial_yuan
+		icon = Placeholder
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_legislative_yuan }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_ideas = judicial_yuan
+			remove_ideas = old_judicial_system
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Control Yuan
+	focus = {
+		id = CHI_control_yuan
+		icon = Placeholder
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_constitutional_reforms }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_ideas = control_yuan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Re-Establish Elections
+	focus = {
+		id = CHI_reestablish_elections
+		icon = GFX_goal_support_democracy
+		x = 6
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_assassinate_the_emperor }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mandate of Heaven
+	focus = {
+		id = CHI_mandate_of_heaven
+		icon = GFX_focus_man_claim_the_mandate_of_heaven
+		x = 14
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = CHI_assassinate_the_emperor }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_stability = 0.1
+			add_ideas = mandate_of_heaven
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand the Imperial Textiles
+	focus = {
+		id = CHI_expand_the_imperial_textiles
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 10
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_mandate_of_heaven }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_stability = 0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Executive Yuan
+	focus = {
+		id = CHI_executive_yuan
+		icon = Placeholder
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_constitutional_reforms }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_ideas = executive_yuan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Legislative Yuan
+	focus = {
+		id = CHI_legislative_yuan
+		icon = GFX_focus_chi_legislative_yuan
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_constitutional_reforms }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = legislative_yuan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Assassinate the Emperor
+	focus = {
+		id = CHI_assassinate_the_emperor
+		icon = Placeholder
+		x = 6
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = CHI_mandate_of_heaven }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Examination Yuan
+	focus = {
+		id = CHI_examination_yuan
+		icon = Placeholder
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_control_yuan }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_ideas = examination_yuan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Constitutional Reforms
+	focus = {
+		id = CHI_constitutional_reforms
+		icon = GFX_focus_generic_treaty
+		x = 6
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_reestablish_elections }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_stability = 0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Embroidered Uniform Guard
+	focus = {
+		id = CHI_embroidered_uniform_guard
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_expand_the_imperial_textiles }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_ideas = embroidered_uniform_guard
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reorganize the Military
+	focus = {
+		id = CHI_reorganize_the_military
+		icon = GFX_focus_generic_little_entente
+		x = 23
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_officer_training }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			remove_ideas = badly_organized_military
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Educational Reform
+	focus = {
+		id = CHI_educational_reform
+		icon = GFX_goal_continuous_increase_nu
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_centralization }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		completion_reward = {
+			add_ideas = educational_reform
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New Judicial System
+	focus = {
+		id = CHI_new_judicial_system
+		icon = GFX_goal_generic_neutrality_focus
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_centralization }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			remove_ideas = old_judicial_system
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Regulize Tax Collection
+	focus = {
+		id = CHI_regulize_tax_collection
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_new_judicial_system }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			remove_ideas = unregulized_tax_collection
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Police Forces
+	focus = {
+		id = CHI_police_forces
+		icon = GFX_goal_generic_military_sphere
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_new_judicial_system }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = police_forces
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Imperial University
+	focus = {
+		id = CHI_imperial_university
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_educational_reform }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		completion_reward = {
+			add_research_slot = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Chinese Identity
+	focus = {
+		id = CHI_chinese_identity
+		icon = GFX_goal_generic_political_pressure
+		relative_position_id = CHI_one_language
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_one_language }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		completion_reward = {
+			add_war_support = 0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Chinese Culture
+	focus = {
+		id = CHI_chinese_culture
+		icon = GFX_goal_generic_national_unity
+		relative_position_id = CHI_chinese_identity
+		x = -1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_chinese_identity }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		completion_reward = {
+			add_war_support = 0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Chinese Philosophy
+	focus = {
+		id = CHI_chinese_philosophy
+		icon = GFX_focus_smiling_buddha
+		relative_position_id = CHI_chinese_identity
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_chinese_identity }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		completion_reward = {
+			add_war_support = 0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for One Language
+	focus = {
+		id = CHI_one_language
+		icon = GFX_focus_hol_united_netherlands
+		x = 26
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_mandate_of_heaven }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		completion_reward = {
+			add_war_support = 0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Chinese Nationalism
+	focus = {
+		id = CHI_chinese_nationalism
+		icon = GFX_focus_chi_one_china_policy
+		relative_position_id = CHI_chinese_identity
+		x = 0
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CHI_chinese_philosophy 
+		}
+		prerequisite = { 
+			focus = CHI_chinese_culture 
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		completion_reward = {
+			add_war_support = 0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for German Scientists
+	focus = {
+		id = CHI_german_scientists
+		icon = GFX_goal_generic_scientific_exchange
+		x = 18
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CHI_sinogerman_cooperation 
+		}
+		prerequisite = { 
+			focus = CHI_imperial_university 
+		}
+		completion_reward = {
+			add_ideas = german_scientists
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for German Infrastructure
+	focus = {
+		id = CHI_german_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 19
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_sinogerman_cooperation }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Nationalist Propaganda
+	focus = {
+		id = CHI_nationalist_propaganda
+		icon = GFX_goal_generic_propaganda
+		relative_position_id = CHI_chinese_nationalism
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_chinese_nationalism }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		completion_reward = {
+			add_ideas = nationalist_propaganda
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Chinese Dollar
+	focus = {
+		id = CHI_chinese_dollar
+		icon = GFX_goal_generic_national_unity
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_western_investors }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		completion_reward = {
+			add_ideas = chinese_dollar
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Chinese Mark
+	focus = {
+		id = CHI_chinese_mark
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 21
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_sinogerman_cooperation }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_ideas = chinese_mark
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for German Investors
+	focus = {
+		id = CHI_german_investors
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_chinese_mark }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for German Infrastructure II
+	focus = {
+		id = CHI_german_infrastructure_ii
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 19
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_german_infrastructure }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for German Military Industry
+	focus = {
+		id = CHI_german_military_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CHI_german_investors 
+		}
+		prerequisite = { 
+			focus = CHI_german_infrastructure_ii 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Western Investors
+	focus = {
+		id = CHI_western_investors
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_land_tax_reform }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		completion_reward = {
+			add_ideas = western_investors
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Free Market
+	focus = {
+		id = CHI_free_market
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_reestablish_elections }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		completion_reward = {
+			add_ideas = free_trade
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Welfare
+	focus = {
+		id = CHI_welfare
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_reestablish_elections }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_war_support = 0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Land Tax Reform
+	focus = {
+		id = CHI_land_tax_reform
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_free_market }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		completion_reward = {
+			remove_ideas = unregulized_tax_collection
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Unemployment Assistance
+	focus = {
+		id = CHI_unemployment_assistance
+		icon = Placeholder
+		x = 0
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_welfare }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_war_support = 0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New Life Movement
+	focus = {
+		id = CHI_new_life_movement
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_unemployment_assistance }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_stability = 0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Free Hospitals
+	focus = {
+		id = CHI_free_hospitals
+		icon = GFX_goal_tripartite_pact
+		x = 0
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_new_life_movement }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			add_war_support = 0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Approach the Westerners
+	focus = {
+		id = CHI_approach_the_westerners
+		icon = GFX_goal_generic_major_alliance
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_reestablish_elections }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		completion_reward = {
+			ENG = {
+				country_event = {
+					id = qing.1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Free Universities
+	focus = {
+		id = CHI_free_universities
+		icon = GFX_goal_continuous_research
+		x = 1
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CHI_free_hospitals 
+		}
+		prerequisite = { 
+			focus = CHI_chinese_dollar 
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		completion_reward = {
+			add_research_slot = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Western Scientists
+	focus = {
+		id = CHI_western_scientists
+		icon = GFX_goal_generic_scientific_exchange
+		x = 2
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_free_universities }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		completion_reward = {
+			add_ideas = western_scientists
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rural Universities
+	focus = {
+		id = CHI_rural_universities
+		icon = GFX_focus_research2
+		x = 0
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_free_universities }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		completion_reward = {
+			add_research_slot = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Improve Infrastructure
+	focus = {
+		id = CHI_improve_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 2
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Textile Industry
+	focus = {
+		id = CHI_textile_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_improve_infrastructure }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Military Industry
+	focus = {
+		id = CHI_military_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHI_improve_infrastructure }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

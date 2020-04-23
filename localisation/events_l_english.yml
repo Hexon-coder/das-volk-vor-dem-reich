@@ -3238,3 +3238,10 @@
 germany.129.t:0 "Rumors of the KPD"
 germany.129.d:0 "Since the Kaiser had banned the KPD many people still believed in communism because of the KPD and now there have been rumors of the revival of the KPD!"
 germany.129.a:0 "Good Lord"
+
+############################### China ###############################
+
+qing.1.t:0 "China seeks to join the Entente"
+qing.1.d:0 "Following the recent democratic takeover in china it lost it's place in the Kaiserbund and ever since it has been searching for allies."
+qing.1.a:0 "Accept"
+qing.1.b:0 "Refuse"

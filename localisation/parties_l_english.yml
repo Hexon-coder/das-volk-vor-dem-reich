@@ -609,6 +609,7 @@
  authoritarianism:0 "Authoritarian"
  authoritarianism_noun:0 "Authoritarianism"
  authoritarianism_desc:0 "Authoritarian Regime"
+ authoritarianism_drift:0 "Daily Authoritarianism Support"
  monarchy:0 "Monarchism"
  monarchy_desc:0 "A monarchy is a form of government in which a person, the monarch, is head of state for life or until abdication."
  SOV_authoritarianism_party:0 "Romanov Dynasty"

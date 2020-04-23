@@ -90,6 +90,426 @@ ideas = {
 			}
 		}
 		
+		mandate_of_heaven = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				stability_weekly = 0.002
+				authoritarianism_drift = 0.1
+				drift_defence_factor = 0.25
+				political_power_factor = 0.25
+			}
+		}
+		embroidered_uniform_guard = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				stability_weekly = 0.002
+				drift_defence_factor = 0.20
+				war_support_weekly = 0.02
+				political_power_factor = 0.25
+			}
+		}
+		unregulized_tax_collection = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.25
+				political_power_factor = 0.25
+			}
+		}
+		police_forces = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = 0.05
+				political_power_factor = 0.25
+			}
+		}
+		centralization = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				political_power_factor = 0.5
+			}
+		}
+		old_judicial_system = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.10
+			}
+		}
+		advisory_council = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				stability_weekly = 0.007
+				democratic_drift = 0.4
+			}
+		}
+		educational_reform = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		german_scientists = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				research_speed_factor = 0.2
+			}
+		}
+		western_scientists = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				research_speed_factor = 0.2
+			}
+		}
+		chinese_mark = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+		german_military_advisors = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				planning_speed = 0.2
+				max_planning = 0.3
+				army_org_factor = 0.5
+				army_morale_factor = 0.5
+			}
+		}
+		badly_organized_military = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				max_planning = -0.5
+				army_org_factor = -0.7
+			}
+		}
+		nationalist_propaganda = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				war_support_weekly = 0.05
+			}
+		}
+		control_yuan = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				stability_weekly = 0.005
+				political_power_gain = 0.5
+			}
+		}
+		examination_yuan = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				navy_leader_start_level = 4
+				army_leader_start_level = 4
+			}
+		}
+		executive_yuan = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				stability_weekly = 0.005
+				political_power_gain = 0.5
+			}
+		}
+		legislative_yuan = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				stability_weekly = 0.005
+				political_power_gain = 0.5
+			}
+		}
+		judicial_yuan = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				stability_weekly = 0.005
+				political_power_gain = 0.5
+			}
+		}
+		national_security_council = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				planning_speed = 0.3
+				max_planning = 0.3
+				defence = 0.3
+			}
+		}
+		western_investors = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+		chinese_dollar = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = Placeholder
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+		
+		
 		Transylvania_crisis = {
 			
 			allowed = {
@@ -151,6 +571,6 @@ ideas = {
 				offensive_war_stability_factor = -0.05
 				planning_speed = -0.05
 			}
-		}			
+		}
 	}
 }

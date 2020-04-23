@@ -9,8 +9,13 @@ if = {
 	}
 }
 
+add_ideas = {
+	old_judicial_system
+	unregulized_tax_collection
+}
+
 set_stability = 0.2
-set_war_support = 0.5
+set_war_support = 0.05
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -41,34 +46,29 @@ if = {
 	}
 }
 
-add_ideas = {
-	
-}
 save_global_event_target_as = WTT_current_china_leader
 
 set_convoys = 40
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = authoritarianism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 32
-	communism = 60
-	authoritarianism = 8
+	democratic = 7
+	communism = 5
+	authoritarianism = 88
 }
 
 create_country_leader = {
-	name = "Chiang Kai-Shek"
-	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
-	picture = "Portrait_China_Chiang_Kai_Shek.dds"
-	expire = "1965.1.1"
-	ideology = despotism
+	name = "Xuantong Emperor"
+	picture = "GFX_portrait_man_henry_pu_yi_emperor"
+	expire = "1960.1.1"
+	ideology = monarchy
 	traits = {
-		generallissimo
 	}
 }
 
@@ -80,17 +80,6 @@ create_country_leader = {
 	ideology = leninism
 	traits = {
 		cornered_fox
-	}
-}
-
-create_country_leader = {
-	name = "Wang Jingwei"
-	desc = "POLITICS_WANG_JINGWEI_DESC"
-	picture = "GFX_portrait_chi_wang_jingwei"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
 	}
 }
 
