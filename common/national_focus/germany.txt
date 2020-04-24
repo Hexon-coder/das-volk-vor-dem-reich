@@ -74,4 +74,193 @@ focus_tree = {
 		country_event = { id = germany.129 }
 		}
 	}
+	
+focus = {
+		id = GER_kpd_gain_popularity
+		icon = GFX_goal_support_fourth_int
+		prerequisite = { focus = GER_communists_will_rise_again }
+		mutually_exclusive = { focus = GER_for_the_kpd }
+		x = 6
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		country_event = { id = germany.130 }
+		set_popularities = {
+	authoritarianism = 70
+	democratic = 22
+	communism = 8
+	}
+		}
+	}
+
+	focus = {
+		id = GER_recruit_communists
+		icon = GFX_goal_support_fourth_int
+		prerequisite = { focus = GER_for_the_kpd focus = GER_communists_will_rise_again }
+		#mutually_exclusive = { focus = GER_for_the_kpd focus = GER_communists_will_rise_again }
+		x = 6
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		52 = { add_manpower = 5000}
+		set_popularities = {
+	authoritarianism = 70
+	democratic = 18
+	communism = 12
+	    }
+	}
+}
+
+	focus = {
+		id = GER_rally_in_berlin
+		icon = GFX_goal_support_fourth_int
+		prerequisite = { focus = GER_for_the_kpd focus = GER_communists_will_rise_again }
+		mutually_exclusive = { focus = GER_recruit_communists }
+		x = 4
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 70
+	democratic = 15
+	communism = 15
+	        }
+	    }
+    }
+
+    focus = {
+		id = GER_stay_neutral
+		icon = GFX_goal_support_fourth_int
+		prerequisite = { focus = GER_rally_in_berlin focus = GER_recruit_communists }
+		mutually_exclusive = { focus = GER_stay_neutral focus = GER_merge_the_spd_and_kpd }
+		x = 5
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 70
+	democratic = 12
+	communism = 18
+	        }
+	    }
+    }
+
+    focus = {
+		id = GER_merge_the_spd_and_kpd
+		icon = GFX_goal_support_fourth_int
+		prerequisite = { focus = GER_rally_in_berlin focus = GER_recruit_communists }
+		mutually_exclusive = { focus = GER_stay_neutral focus = GER_crush_the_spd }
+		x = 7
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 70
+	democratic = 5
+	communism = 25
+	        }
+	        hidden_effect = {
+			create_country_leader = {
+			name = "Ernst Thälmann"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Ernst_Thalmann_Portrait.dds"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+			}
+		}
+		}
+	    }
+    }
+
+    focus = {
+		id = GER_crush_the_spd
+		icon = GFX_goal_support_fourth_int
+		prerequisite = { focus = GER_rally_in_berlin focus = GER_recruit_communists }
+		mutually_exclusive = { focus = GER_merge_the_spd_and_kpd focus = GER_stay_neutral }
+		x = 3
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 70
+	democratic = 12
+	communism = 30
+	        }
+	        hidden_effect = {
+	        add_political_power = -150
+	        }
+	    }
+    }
+
+     focus = {
+		id = GER_assassinate_kaiser
+		icon = GFX_goal_support_fourth_int
+		prerequisite = { focus = GER_crush_the_spd focus = GER_merge_the_spd_and_kpd focus = GER_stay_neutral }
+		#mutually_exclusive = { focus = GER_recruit_communists}
+		x = 5
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		news_event = { id = news.1 }
+		country_event = { id = germany.131 }
+		create_country_leader = {
+			name = "Ernst Thälmann"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Ernst_Thalmann_Portrait.dds"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+			}
+		}
+		kill_country_leader = yes
+		add_stability = 0.05
+		create_country_leader = {
+			name = "Wilhelm III"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Wilhelm_III_Portrait.dds"
+			expire = "1965.1.1"
+			ideology = authoritarian_democratic
+			traits = {
+			}
+		}
+		set_politics = {
+                    ruling_party = communism
+                }
+		start_civil_war = {
+				ideology = authoritarianism
+				size = 0.5
+				capital = 63
+				states = { 67 762 66 68 63 85 86 5 763 }
+			}
+	    }
+    }
 }
