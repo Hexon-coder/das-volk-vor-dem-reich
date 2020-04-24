@@ -195,7 +195,7 @@ focus = {
 
     focus = {
 		id = GER_crush_the_spd
-		icon = GFX_goal_support_fourth_int
+		icon = GFX_crush_the_spd
 		prerequisite = { focus = GER_rally_in_berlin focus = GER_recruit_communists }
 		mutually_exclusive = { focus = GER_merge_the_spd_and_kpd focus = GER_stay_neutral }
 		x = 3
@@ -219,7 +219,7 @@ focus = {
 
      focus = {
 		id = GER_assassinate_kaiser
-		icon = GFX_goal_support_fourth_int
+		icon = GFX_assassinate_the_kaiser
 		prerequisite = { focus = GER_crush_the_spd focus = GER_merge_the_spd_and_kpd focus = GER_stay_neutral }
 		#mutually_exclusive = { focus = GER_recruit_communists}
 		x = 5
