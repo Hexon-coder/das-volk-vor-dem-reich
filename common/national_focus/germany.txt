@@ -259,7 +259,7 @@ focus = {
 				ideology = authoritarianism
 				size = 0.5
 				capital = 63
-				states = { 67 762 66 68 63 85 86 5 763 }
+				states = { 67 762 66 68 63 85 86 5 763 188 4 152 69 181 153 39 }
 			}
 	    }
     }
