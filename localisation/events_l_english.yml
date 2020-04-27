@@ -3218,6 +3218,7 @@
  lar_collab_gov.1.t:0 "[From.GetAdjective] Partisans in [Root.GetNameDef]"
  lar_collab_gov.1.d:0 "[From.GetNameDefCap] have recently increased their efforts to build collaboration within our nation. A number of [This.GetAdjective] politicians have started speaking rather sympathetically about the [From.GetAdjective] regime, and many partisans within our nation are turning their [From.GetRulingIdeology] sentiment into direct support for [From.GetNameDef].\n\nThe growing [From.GetAdjective] influence in our nation will undoubtedly lower [Root.GetAdjective] resistance and may even lead to a new [From.GetRulingIdeology] government in collaboration with [From.GetNameDef] in the event that [Root.GetNameDef] should capitulate."
  
+ 
  ############################# Modding Below ##########################
 
  ############################# Bohemia-Hungary ########################
@@ -3238,6 +3239,21 @@
 germany.129.t:0 "Rumors of the KPD"
 germany.129.d:0 "Since the Kaiser had banned the KPD many people still believed in communism because of the KPD and now there have been rumors of the revival of the KPD!"
 germany.129.a:0 "Good Lord"
+germany.130.t:0 "Rumors of KPD Gatherings"
+germany.130.d:0 "Today at around 19:00 there were reports from people stating that they heard in an underground train station in Berlin, people said they heard people talking about refroming Germany and bringing Communism to power in Germany. When the police go there they searched the underground trainstation to find no one and nothing there..."
+germany.130.a:0 "So What..."
+germany.131.t:0 "Civil War!"
+germany.131.d:0 "After the Kaiser's assasination there were riots in the street people getting shot, there were bodies lying everywhere people instantly had to choose the side they were on the Communists or the Monarchy's side people who were found with communist symbols in their house were arrested or just shot on the spot. It was a CIVIL WAR the Communists were sick and tired of the useless Monarchy, the leader of the KPD is Ernst Thälmann. The Communists who had planned this uprising shot at a group of police at the motorcade where the Kaiser had been shot, only seconds after the assassination."
+germany.131.a:0 "We Will Never Bow to the Filthy Hohenzollerns."
+
+############################### News-Events #########################################
+
+news.1.t:0 "Assassination of the Kaiser!"
+news.1.d:0 "At 14:22 the Kaiser of Germany was shot three times once in the head and twice in the body. The assassin was a man named Jakob Schmidt a former member of the KPD who were previously banned by the Kaiser himself two years ago, but there have been rumors that the KPD is still operating. Schmidt was beaten to death by several of the Kaiser's guards in several days they will crown the new Kaiser."
+news.1.a:0 "My God Some People Are Ruthless"
+news.2.t:0 "German Revolution"
+news.2.d:0 "After the Kaiser's assasination there were riots in the streets of Germany people getting shot, there were bodies lying everywhere people instantly had to choose the side they were on the Communists or the Monarchy's side people who were found with communist symbols in their house were arrested or just shot on the spot. It was a CIVIL WAR the Communists were sick and tired of the useless Monarchy, the leader of the KPD is Ernst Thälmann. The Communists who had planned this uprising shot at a group of police at the motorcade where the Kaiser had been shot, only seconds after the assassination. Will this be the end of the Monarchy?..."
+news.2.a:0 "Will There Ever Be Peace?"
 
 ############################### China ###############################
 

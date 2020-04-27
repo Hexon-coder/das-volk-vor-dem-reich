@@ -6208,3 +6208,31 @@ country_event = {
 		add_ideas = triumphant_will
 		}
 }
+
+country_event = {
+	id = germany.130
+	title = germany.130.t
+	desc = germany.130.d
+	picture = GFX_report_event_german_speech
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.130.a
+		}
+}
+
+country_event = {
+	id = germany.131
+	title = germany.131.t
+	desc = germany.131.d
+	picture = GFX_report_event_german_speech
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.131.a
+		}
+}

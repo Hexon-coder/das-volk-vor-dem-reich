@@ -349,7 +349,11 @@
  support_nationalist_spain_desc:0 "The Spanish Civil War is viewed by many as a domestic version of the global ideological conflicts that define our times. Sending equipment to the Nationalist side, we can take a stand against the anarchists and Reds who would destroy the Spanish nation."
  support_nationalist_spain_short_desc:0 "Send equipment to support Nationalist Spain in the Civil War"
  may_provoke_hostility:0 "§R[This.GetName] and other nations may respond with hostility to this course of action.§!"
- #
+ 
+ ################################ Modding ##########################################
+
+ ################################## BH #############################################
+
  AUS_aus_karolys_speech:0 "Karls speach"
  AUS_aus_karolys_speech_desc:0 "karl will hold a speach on the status of the nation."
  Karl_weak:0 "concessions to the protesters"
@@ -376,3 +380,26 @@
  Karl_Victory_desc:0 "Yet again the king marches home victorious, now he has all the power to reform the nation."
  transylvania_crisis_start:0 "Transylvania Crisis"
  transylvania_crisis_start_desc:0 "The Iron guard in Romania dares to claim our land, even though we'd like to prove our supremacy its better to try to deal with them."
+
+######################## Germany ##############################
+
+GER_political_advancment:0 "Political Advancment"
+GER_political_advancment_desc:0 "Germany has many political parties they need to pick one."
+GER_communists_will_rise_again:0 "Communists Will Rise Again!"
+GER_communists_will_rise_again_desc:0 "Since Germany's party ended because the were banned, the communists wanted to be revived"
+GER_for_the_kpd:0 "For the KPD"
+GER_for_the_kpd:0 "The KPD is the Communist party that was banned and they still want to furfill their glory."
+GER_kpd_gain_popularity:0 "Gain Popularity"
+GER_kpd_gain_popularity_desc:0 "We need more popularity."
+GER_recruit_communists:0 "Recruit Communists"
+GER_recruit_communists_desc:0 "We need more members!"
+GER_rally_in_berlin:0 "Rally in Berlin"
+GER_rally_in_berlin:0 "We need to host a rally in Berlin!"
+GER_stay_neutral:0 "Stay Neutral"
+GER_stay_neutral_desc:0 "We shouldn't get to involved."
+GER_merge_the_spd_and_kpd:0 "Merge the SPD and KPD"
+GER_merge_the_spd_and_kpd_desc:0 "We have to merge our parties we are both Socialists"
+GER_crush_the_spd:0 "Crush the SPD"
+GER_crush_the_spd_desc:0 "It is better if we demolish the SPD so they don't get in our way."
+GER_assassinate_kaiser:0 "Assassinate the Kaiser!"
+GER_assassinate_kaiser_desc:0 "It is our time to end the monarchy!"

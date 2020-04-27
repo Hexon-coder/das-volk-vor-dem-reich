@@ -1995,7 +1995,7 @@ spriteTypes = {
 		name = "GFX_transylvania_crisis_start"
 		texturefile = "gfx/interface/goals/transylvania_crisis_start.dds"
 	}
-	SpriteType = { 
+	SpriteType = {
 		name = "GFX_focus_sinogerman_cooperation"
 		texturefile = "gfx/interface/goals/focus_sinogerman_cooperation.dds"
 	}
@@ -2022,5 +2022,13 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_focus_assassinate_the_emperor"
 		texturefile = "gfx/interface/goals/focus_assassinate_the_emperor.dds"
+	}
+	SpriteType = {
+		name = "GFX_assassinate_the_kaiser"
+		texturefile = "gfx/interface/goals/Assassinate_the_Kaiser.dds"
+	}
+	SpriteType = { 
+		name = "GFX_crush_the_spd"
+		texturefile = "gfx/interface/goals/Crush_SPD.dds"
 	}
 }
