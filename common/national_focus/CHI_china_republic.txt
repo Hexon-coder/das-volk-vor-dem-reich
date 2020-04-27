@@ -30,7 +30,7 @@ focus_tree = {
 	#Focus for Sino-German Cooperation
 	focus = {
 		id = CHI_sinogerman_cooperation
-		icon = Placeholder
+		icon = GFX_focus_sinogerman_cooperation
 		x = 20
 		y = 1
 		cost = 10
@@ -830,7 +830,7 @@ focus_tree = {
 	#Focus for Unemployment Assistance
 	focus = {
 		id = CHI_unemployment_assistance
-		icon = Placeholder
+		icon = GFX_goal_generic_intelligence_exchange
 		x = 0
 		y = 3
 		cost = 10

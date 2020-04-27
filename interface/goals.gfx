@@ -1995,4 +1995,8 @@ spriteTypes = {
 		name = "GFX_transylvania_crisis_start"
 		texturefile = "gfx/interface/goals/transylvania_crisis_start.dds"
 	}
+	SpriteType = { 
+		name = "GFX_focus_sinogerman_cooperation"
+		texturefile = "gfx/interface/goals/focus_sinogerman_cooperation.dds"
+	}
 }
