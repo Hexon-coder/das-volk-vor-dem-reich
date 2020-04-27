@@ -86,7 +86,7 @@ focus_tree = {
 	#Focus for National Security Council
 	focus = {
 		id = CHI_national_security_council
-		icon = Placeholder
+		icon = GFX_focus_national_security_council
 		x = 6
 		y = 5
 		cost = 10
@@ -131,7 +131,7 @@ focus_tree = {
 	#Focus for Judicial Yuan
 	focus = {
 		id = CHI_judicial_yuan
-		icon = Placeholder
+		icon = GFX_focus_judicial_yuan
 		x = 8
 		y = 4
 		cost = 10
@@ -150,7 +150,7 @@ focus_tree = {
 	#Focus for Control Yuan
 	focus = {
 		id = CHI_control_yuan
-		icon = Placeholder
+		icon = GFX_focus_control_yuan
 		x = 4
 		y = 3
 		cost = 10
@@ -227,7 +227,7 @@ focus_tree = {
 	#Focus for Executive Yuan
 	focus = {
 		id = CHI_executive_yuan
-		icon = Placeholder
+		icon = GFX_focus_executive_yuan
 		x = 6
 		y = 3
 		cost = 10
@@ -263,7 +263,7 @@ focus_tree = {
 	#Focus for Assassinate the Emperor
 	focus = {
 		id = CHI_assassinate_the_emperor
-		icon = Placeholder
+		icon = GFX_focus_assassinate_the_emperor
 		x = 6
 		y = 0
 		cost = 10
@@ -278,7 +278,7 @@ focus_tree = {
 	#Focus for Examination Yuan
 	focus = {
 		id = CHI_examination_yuan
-		icon = Placeholder
+		icon = GFX_focus_examination_yuan
 		x = 4
 		y = 4
 		cost = 10

@@ -1999,4 +1999,28 @@ spriteTypes = {
 		name = "GFX_focus_sinogerman_cooperation"
 		texturefile = "gfx/interface/goals/focus_sinogerman_cooperation.dds"
 	}
+	SpriteType = { 
+		name = "GFX_focus_national_security_council"
+		texturefile = "gfx/interface/goals/focus_national_security_council.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_judicial_yuan"
+		texturefile = "gfx/interface/goals/focus_judicial_yuan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_control_yuan"
+		texturefile = "gfx/interface/goals/focus_control_yuan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_examination_yuan"
+		texturefile = "gfx/interface/goals/focus_examination_yuan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_executive_yuan"
+		texturefile = "gfx/interface/goals/focus_executive_yuan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_assassinate_the_emperor"
+		texturefile = "gfx/interface/goals/focus_assassinate_the_emperor.dds"
+	}
 }
