@@ -1,0 +1,86 @@
+political_actions = {
+	appoint_democratic_chancellor = {
+
+		icon = generic_political_discourse
+
+		available = {
+			if = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+		}
+
+		visible = {
+			tag = GER
+		}
+	
+		complete_effect = {
+               set_politics = {
+					ruling_party = democratic
+				}
+        }
+		  
+		cost = 150
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	appoint_communism_chancellor = {
+
+		icon = generic_political_discourse
+
+		available = {
+			if = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+
+		visible = {
+			tag = GER
+		}
+	
+		complete_effect = {
+               set_politics = {
+					ruling_party = communism
+				}
+        }
+		  
+		cost = 150
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	appoint_authoritarianism_chancellor = {
+
+		icon = generic_political_discourse
+
+		available = {
+			if = {
+				NOT = {
+					has_government = authoritarianism
+				}
+			}
+		}
+
+		visible = {
+			tag = GER
+		}
+	
+		complete_effect = {
+               set_politics = {
+					ruling_party = authoritarianism
+				}
+        }
+		  
+		cost = 150
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

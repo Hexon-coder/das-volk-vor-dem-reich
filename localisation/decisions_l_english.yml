@@ -27,3 +27,6 @@
  aus_mission_pass_reform_9:0 "state powers "
  aus_mission_pass_reform_10:0 "establish a parliament "
  aus_mission_pass_reform_final:0 "Rewrite the constitution "
+ appoint_authoritarianism_chancellor:0 "Appoint Authoritarian Chancellor"
+ appoint_communism_chancellor:0 "Appoint Communist Chancellor"
+ appoint_democratic_chancellor:0 "Appoint Democratic Chancellor"
