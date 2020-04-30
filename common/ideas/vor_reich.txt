@@ -102,7 +102,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = man_low_legitimacy5
 			
 			modifier = {
 				stability_weekly = 0.002
@@ -123,7 +123,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = man_militarism
 			
 			modifier = {
 				stability_weekly = 0.002
@@ -144,11 +144,11 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = chi_hyper_inflation5
 			
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.25
-				political_power_factor = 0.25
+				political_power_factor = -0.25
 			}
 		}
 		police_forces = {
@@ -163,7 +163,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = generic_secret_police
 			
 			modifier = {
 				stability_weekly = 0.005
@@ -183,7 +183,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = generic_central_management
 			
 			modifier = {
 				political_power_factor = 0.5
@@ -201,7 +201,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = generic_neutrality_drift_bonus
 			
 			modifier = {
 				political_power_factor = -0.2
@@ -220,11 +220,12 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = generic_king_handled
 			
 			modifier = {
 				stability_weekly = 0.007
-				democratic_drift = 0.4
+				democratic_drift = 0.3
+				political_power_gain = -2
 			}
 		}
 		educational_reform = {
@@ -239,7 +240,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = generic_army_war_college
 			
 			modifier = {
 				research_speed_factor = 0.1
@@ -257,7 +258,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = generic_flexible_foreign_policy
 			
 			modifier = {
 				research_speed_factor = 0.2
@@ -275,7 +276,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = generic_flexible_foreign_policy
 			
 			modifier = {
 				research_speed_factor = 0.2
@@ -293,7 +294,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = generic_economic_increase
 			
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.2
@@ -311,7 +312,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = generic_flexible_foreign_policy2
 			
 			modifier = {
 				planning_speed = 0.2
@@ -332,7 +333,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = chi_army_corruption3
 			
 			modifier = {
 				max_planning = -0.5
@@ -351,7 +352,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = generic_intel_bonus
 			
 			modifier = {
 				war_support_weekly = 0.05
@@ -369,7 +370,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = focus_control_yuan
 			
 			modifier = {
 				stability_weekly = 0.005
@@ -388,7 +389,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = focus_examination_yuan
 			
 			modifier = {
 				navy_leader_start_level = 4
@@ -407,7 +408,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = focus_executive_yuan
 			
 			modifier = {
 				stability_weekly = 0.005
@@ -426,7 +427,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = focus_chi_legislative_yuan
 			
 			modifier = {
 				stability_weekly = 0.005
@@ -445,7 +446,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = focus_judicial_yuan
 			
 			modifier = {
 				stability_weekly = 0.005
@@ -464,7 +465,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = focus_national_security_council
 			
 			modifier = {
 				planning_speed = 0.3
@@ -484,7 +485,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = received_attache
 			
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.2
@@ -502,7 +503,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = Placeholder
+			picture = generic_economic_increase
 			
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.2

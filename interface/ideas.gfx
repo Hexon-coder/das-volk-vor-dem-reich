@@ -4499,6 +4499,31 @@ spriteTypes = {
 		name = "GFX_idea_impending_crackdown"
 		texturefile = "gfx/interface/ideas/impending_crackdown.dds"
 	}
+	
+	SpriteType = { 
+		name = "GFX_idea_focus_national_security_council"
+		texturefile = "gfx/interface/ideas/focus_national_security_council.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_focus_judicial_yuan"
+		texturefile = "gfx/interface/ideas/focus_judicial_yuan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_focus_control_yuan"
+		texturefile = "gfx/interface/ideas/focus_control_yuan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_focus_examination_yuan"
+		texturefile = "gfx/interface/ideas/focus_examination_yuan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_focus_executive_yuan"
+		texturefile = "gfx/interface/ideas/focus_executive_yuan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_focus_chi_legislative_yuan"
+		texturefile = "gfx/interface/ideas/focus_chi_legislative_yuan.dds"
+	}
 }
 
 

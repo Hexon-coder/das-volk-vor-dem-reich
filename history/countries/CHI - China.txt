@@ -12,6 +12,7 @@ if = {
 add_ideas = {
 	old_judicial_system
 	unregulized_tax_collection
+	badly_organized_military
 }
 
 set_stability = 0.2
