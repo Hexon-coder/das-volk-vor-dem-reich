@@ -123,8 +123,12 @@ set_popularities = {
 	democratic = 30
 }
 
-create_faction = Mitteleuropa
+create_faction = Fünfkaiserbund
 add_to_faction = GER
+add_to_faction = CHI
+add_to_faction = AUS
+add_to_faction = SOV
+add_to_faction = SER
 
 
 add_ideas = {
