@@ -263,4 +263,124 @@ focus = {
 			}
 	    }
     }
+    
+    focus = {
+		id = GER_democratic_regime
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_political_advancment }
+		x = 13
+		y = 1
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 70
+	democratic = 30
+	communism = 5
+	}
+		}
+	}
+
+	focus = {
+		id = GER_elect_hitler
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_democratic_regime }
+		mutually_exclusive = { focus = GER_elect_huess }
+		x = 10
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		create_country_leader = {
+			name = "Adolf Hitler"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Portrait_Adolf_Hitler.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			}
+		}
+	}
+}
+
+	focus = {
+		id = GER_elect_huess
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_democratic_regime }
+		mutually_exclusive = { focus = GER_elect_hitler }
+		x = 16
+		y = 2
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		create_country_leader = {
+			name = "Theodor Huess"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Portrait_Theodor_Huess.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+			    }
+		    }
+		}
+	}
+
+	focus = {
+		id = GER_liberals_continue
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_democratic_regime }
+		mutually_exclusive = { focus = GER_elect_hitler }
+		x = 12
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = GER_liberals_continue
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_democratic_regime }
+		mutually_exclusive = { focus = GER_elect_hitler }
+		x = 12
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = GER_purge_the_liberals
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_democratic_regime }
+		mutually_exclusive = { focus = GER_elect_hitler }
+		x = 12
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_political_power = 75
+		hidden_effect = {
+		
+		    }
+		}
+	}
+}
 }
