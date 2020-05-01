@@ -1,5 +1,7 @@
 ﻿capital = 64
 
+set_country_flag = kaiser
+
 oob = "GER_1936"
 add_opinion_modifier = { target = AUS modifier = large_decrease }
 
