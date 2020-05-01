@@ -222,7 +222,7 @@ focus = {
 		icon = GFX_assassinate_the_kaiser
 		prerequisite = { focus = GER_crush_the_spd focus = GER_merge_the_spd_and_kpd focus = GER_stay_neutral }
 		#mutually_exclusive = { focus = GER_recruit_communists}
-		x = 5
+		x = 3
 		y = 5
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -230,6 +230,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		clr_country_flag = kaiser
 		news_event = { id = news.1 }
 		country_event = { id = germany.131 }
 		create_country_leader = {
@@ -258,12 +259,12 @@ focus = {
 		start_civil_war = {
 				ideology = authoritarianism
 				size = 0.5
-				capital = 63
-				states = { 67 762 66 68 63 85 86 5 763 188 4 152 69 181 153 39 }
+				capital = 763
+				states = { 67 762 66 68 63 85 86 5 763 188 4 152 69 181 153 39}
 			}
 	    }
     }
-    
+
     focus = {
 		id = GER_democratic_regime
 		icon = GFX_goal_generic_forceful_treaty
@@ -332,27 +333,12 @@ focus = {
 		}
 	}
 
-	focus = {
-		id = GER_liberals_continue
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = GER_democratic_regime }
-		mutually_exclusive = { focus = GER_elect_hitler }
-		x = 12
-		y = 3
-		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-		completion_reward = {
-		add_political_power = 50
-		}
-	}
 
 	focus = {
 		id = GER_liberals_continue
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = GER_democratic_regime }
-		mutually_exclusive = { focus = GER_elect_hitler }
+		prerequisite = { focus = GER_elect_hitler }
+		mutually_exclusive = { focus = GER_purge_the_liberals focus = GER_the_1_party_policy }
 		x = 12
 		y = 3
 		cost = 10
@@ -367,9 +353,9 @@ focus = {
 	focus = {
 		id = GER_purge_the_liberals
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = GER_democratic_regime }
-		mutually_exclusive = { focus = GER_elect_hitler }
-		x = 12
+		prerequisite = { focus = GER_elect_hitler }
+		mutually_exclusive = { focus = GER_the_1_party_policy focus = GER_liberals_continue }
+		x = 10
 		y = 3
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -378,9 +364,23 @@ focus = {
 		completion_reward = {
 		add_political_power = 75
 		hidden_effect = {
-		
+		country_event = { id = germany.132 }
 		    }
 		}
 	}
-}
+
+	focus = {
+		id = GER_the_1_party_policy
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_elect_hitler }
+		mutually_exclusive = { focus = GER_purge_the_liberals }
+		x = 8
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+	}
 }
