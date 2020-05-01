@@ -6236,3 +6236,22 @@ country_event = {
 		name = germany.131.a
 		}
 }
+
+country_event = {
+	id = germany.132
+	title = germany.132.t
+	desc = germany.132.d
+	picture = GFX_report_event_german_speech
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.132.a
+		set_popularities = {
+	authoritarianism = 80
+	democratic = 20
+	communism = 5
+	}
+		}
+}
