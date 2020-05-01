@@ -6255,3 +6255,26 @@ country_event = {
 	}
 		}
 }
+
+country_event = {
+	id = germany.133
+	title = germany.133.t
+	desc = germany.133.d
+	picture = GFX_report_event_german_speech
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.133.a
+		add_political_power = 50
+	}
+	option = {
+		name = germany.133.b
+		set_popularities = {
+	authoritarianism = 60
+	democratic = 40
+	communism = 5
+	}
+	}
+}
