@@ -373,3 +373,8 @@ SPR_anarchists = {
 	color = rgb { 204 0 0 }
 	color_ui = rgb { 35 35 35 }
 }
+
+GER_loyalists = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 115 115 115 }
+}
