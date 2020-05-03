@@ -4524,6 +4524,26 @@ spriteTypes = {
 		name = "GFX_idea_focus_chi_legislative_yuan"
 		texturefile = "gfx/interface/ideas/focus_chi_legislative_yuan.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_unstable_goverment"
+		texturefile = "gfx/interface/ideas/unstable_goverment.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_pro_nationalist_army"
+		texturefile = "gfx/interface/ideas/national_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_impending_crackdown"
+		texturefile = "gfx/interface/ideas/impending_crackdown.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_we_will_never_surrender_n"
+		texturefile = "gfx/interface/ideas/we_will_never_surrender_n.dds"
+	}
+    SpriteType = {
+		name = "GFX_idea_we_will_never_surrender_r"
+		texturefile = "gfx/interface/ideas/we_will_never_surrender_n.dds"
+	}
 }
 
 
