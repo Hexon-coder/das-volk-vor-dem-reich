@@ -8,7 +8,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				always = no 
 			}
 
 			removal_cost = -1
@@ -26,7 +26,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				always = no
 			}
 
 			removal_cost = -1
@@ -44,7 +44,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				always = no
 			}
 
 			removal_cost = -1
@@ -53,6 +53,42 @@ ideas = {
 			    stability_factor = -0.10
 				war_support_factor = -0.1 
 			}
-		}
+		}             
+
+		we_will_never_surrender_n = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		   	
+		 	modifier = {
+				surrender_limit = 1
+				max_surrender_limit_offset = 0.15
+			}
+		} 
+
+		we_will_never_surrender_r = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		   	
+		 	modifier = {
+				surrender_limit = 1
+				max_surrender_limit_offset = 0.15
+			}
+		} 
      }
 }
