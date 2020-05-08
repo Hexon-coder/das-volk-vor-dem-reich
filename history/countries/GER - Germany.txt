@@ -1,4 +1,4 @@
-﻿capital = 64
+capital = 64
 
 set_country_flag = kaiser
 
@@ -215,6 +215,18 @@ create_field_marshal = {
 	logistics_skill = 3
 }
 
+create_field_marshal = {
+	name = "Ruprecht von Bayern"
+	picture = "Ruprecht_Von_Bayern_Portrait.dds"
+	traits = {  offensive_doctrine armor_officer }
+	skill = 3
+	id = 2
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
 create_corps_commander = {
 	name = "Friedrich Paulus"
 	picture = "Portrait_Germany_Friedrich_Paulus.dds"
@@ -235,6 +247,18 @@ create_corps_commander = {
 	id = 4
 	attack_skill = 4
 	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Erich Ludendorff"
+	picture = "Portrait_Erich_Ludendorff_Germany.dds"
+	traits = { trickster trait_reckless war_hero }
+	skill = 4
+	id = 4
+	attack_skill = 4
+	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 3
 }
