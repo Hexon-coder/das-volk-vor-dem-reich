@@ -2031,4 +2031,44 @@ spriteTypes = {
 		name = "GFX_crush_the_spd"
 		texturefile = "gfx/interface/goals/Crush_SPD.dds"
 	}
+	SpriteType = { 
+		name = "GFX_purge_the_liberals"
+		texturefile = "gfx/interface/goals/purge_the_liberals.dds"
+	}
+	SpriteType = { 
+		name = "GFX_german_american_cooperation"
+		texturefile = "gfx/interface/goals/german_american_cooperation.dds"
+	}
+	SpriteType = { 
+		name = "GFX_elect_hitler"
+		texturefile = "gfx/interface/goals/elect_hitler.dds"
+	}
+	SpriteType = { 
+		name = "GFX_elect_huess"
+		texturefile = "gfx/interface/goals/elect_huess.dds"
+	}
+	SpriteType = { 
+		name = "GFX_negotiate_hitler"
+		texturefile = "gfx/interface/goals/negotiate_hitler.dds"
+	}
+	SpriteType = { 
+		name = "GFX_german_uprising"
+		texturefile = "gfx/interface/goals/german_uprising.dds"
+	}
+	SpriteType = { 
+		name = "GFX_gerdem"
+		texturefile = "gfx/interface/goals/gerdem.dds"
+	}
+	SpriteType = { 
+		name = "GFX_crush_spd"
+		texturefile = "gfx/interface/goals/crush_spd.dds"
+	}
+	SpriteType = { 
+		name = "GFX_crush_conservatives"
+		texturefile = "gfx/interface/goals/crush_conservatives.dds"
+	}
+	SpriteType = { 
+		name = "GFX_single_party_policy"
+		texturefile = "gfx/interface/goals/single_party_policy.dds"
+	}
 }
