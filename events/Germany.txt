@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # German Events
 ###########################
 
@@ -6278,3 +6278,59 @@ country_event = {
 	}
 	}
 }
+
+country_event = {
+	id = germany.134
+	title = germany.134.t
+	desc = germany.134.d
+	picture = GFX_report_event_german_speech
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.134.a
+		set_popularities = {
+	authoritarianism = 65
+	democratic = 35
+	communism = 5
+	}
+	    }
+	}
+}
+
+country_event = {
+	id = germany.135
+	title = germany.135.t
+	desc = germany.135.d
+	picture = GFX_report_event_german_speech
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.135.a
+		set_popularities = {
+	authoritarianism = 50
+	democratic = 45
+	communism = 5
+	}
+	    }
+	}
+}
+
+country_event = {
+	id = germany.136
+	title = germany.136.t
+	desc = germany.136.d
+	picture = GFX_report_event_german_speech
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.136.a
+	    }
+	}
+}
+
