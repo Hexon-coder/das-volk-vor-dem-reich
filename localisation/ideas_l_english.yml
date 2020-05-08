@@ -2687,3 +2687,16 @@
  we_will_never_surrender_n_desc:0 "Our people are fighting for our state's future. The biggest insult to their sacrifice would be surrender!"
  we_will_never_surrender_r:0 "We Will Never Surrender"
  we_will_never_surrender_r_desc:0 "Our people are fighting for our state's future. The biggest insult to their sacrifice would be surrender!"
+  
+################################### MODDING #######################
+
+################################### GERMANY ##########################
+
+ incompetent_general_staff:0 "Incompetent General Staff"
+ incompetent_general_staff_desc:0 "Our General staff are struggling with this civil war"
+ militia_based_army:0 "Militia Based Army"
+ militia_based_army:0 "Our military is crap! We have militias?!?!? This Civil War Will BE HARD!!!!"
+ weak_economy:0 "Weak Economy"
+ weak_economy_desc:0 "Since the start of the civil war the economy has gone down, will it stay like this?..."
+ down_with_monarchism:0 "Down With Monarchism"
+ down_with_monarchism_desc:0 "We have been under the control of a ruthless monarchy it is time we end it!"
