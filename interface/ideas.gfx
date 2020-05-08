@@ -4544,6 +4544,19 @@ spriteTypes = {
 		name = "GFX_idea_we_will_never_surrender_r"
 		texturefile = "gfx/interface/ideas/we_will_never_surrender_r.dds"
 	}
+	 SpriteType = {
+		name = "GFX_incompetent_general_staff"
+		texturefile = "gfx/interface/ideas/incompetent_general_staff.dds"
+	}
+	 SpriteType = {
+		name = "GFX_down_with_monarchism"
+		texturefile = "gfx/interface/ideas/down_with_monarchism.dds"
+	}
+	SpriteType = {
+		name = "GFX_weak_economy"
+		texturefile = "gfx/interface/ideas/weak_economy.dds"
+	}
+}
 }
 
 
