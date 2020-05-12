@@ -25,3 +25,15 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = qing.2
+	title = qing.2.t
+	desc = qing.2.d
+	picture = GFX_news_event_024
+
+	is_triggered_only = yes
+	
+	option = {
+		name = qing.2.a
+	}
+}
