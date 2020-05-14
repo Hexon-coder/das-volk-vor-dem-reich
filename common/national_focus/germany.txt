@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -27,7 +27,7 @@ focus_tree = {
 	focus = {
 		id = GER_political_advancment
 		icon = GFX_goal_generic_forceful_treaty
-		x = 8
+		x = 9
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -43,6 +43,7 @@ focus_tree = {
 		id = GER_communists_will_rise_again
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = GER_political_advancment }
+		mutually_exclusive = { focus = GER_democratic_regime }
 		x = 5
 		y = 1
 		cost = 10
@@ -61,8 +62,9 @@ focus_tree = {
 
 	focus = {
 		id = GER_for_the_kpd
-		icon = GFX_goal_support_fourth_int
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = GER_communists_will_rise_again }
+		mutually_exclusive = { focus = GER_kpd_gain_popularity }
 		x = 4
 		y = 2
 		cost = 10
@@ -77,7 +79,7 @@ focus_tree = {
 	
 focus = {
 		id = GER_kpd_gain_popularity
-		icon = GFX_goal_support_fourth_int
+		icon = GFX_goal_support_communism
 		prerequisite = { focus = GER_communists_will_rise_again }
 		mutually_exclusive = { focus = GER_for_the_kpd }
 		x = 6
@@ -99,9 +101,9 @@ focus = {
 
 	focus = {
 		id = GER_recruit_communists
-		icon = GFX_goal_support_fourth_int
-		prerequisite = { focus = GER_for_the_kpd focus = GER_communists_will_rise_again }
-		#mutually_exclusive = { focus = GER_for_the_kpd focus = GER_communists_will_rise_again }
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = GER_for_the_kpd focus = GER_kpd_gain_popularity }
+		mutually_exclusive = { focus = GER_rally_in_berlin }
 		x = 6
 		y = 3
 		cost = 10
@@ -121,8 +123,8 @@ focus = {
 
 	focus = {
 		id = GER_rally_in_berlin
-		icon = GFX_goal_support_fourth_int
-		prerequisite = { focus = GER_for_the_kpd focus = GER_communists_will_rise_again }
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = GER_for_the_kpd focus = GER_kpd_gain_popularity }
 		mutually_exclusive = { focus = GER_recruit_communists }
 		x = 4
 		y = 3
@@ -142,9 +144,9 @@ focus = {
 
     focus = {
 		id = GER_stay_neutral
-		icon = GFX_goal_support_fourth_int
+		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = GER_rally_in_berlin focus = GER_recruit_communists }
-		mutually_exclusive = { focus = GER_stay_neutral focus = GER_merge_the_spd_and_kpd }
+		mutually_exclusive = { focus = GER_crush_the_spd focus = GER_merge_the_spd_and_kpd }
 		x = 5
 		y = 4
 		cost = 10
@@ -163,7 +165,7 @@ focus = {
 
     focus = {
 		id = GER_merge_the_spd_and_kpd
-		icon = GFX_goal_support_fourth_int
+		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = GER_rally_in_berlin focus = GER_recruit_communists }
 		mutually_exclusive = { focus = GER_stay_neutral focus = GER_crush_the_spd }
 		x = 7
@@ -195,7 +197,7 @@ focus = {
 
     focus = {
 		id = GER_crush_the_spd
-		icon = GFX_crush_the_spd
+		icon = GFX_crush_spd
 		prerequisite = { focus = GER_rally_in_berlin focus = GER_recruit_communists }
 		mutually_exclusive = { focus = GER_merge_the_spd_and_kpd focus = GER_stay_neutral }
 		x = 3
@@ -222,7 +224,7 @@ focus = {
 		icon = GFX_assassinate_the_kaiser
 		prerequisite = { focus = GER_crush_the_spd focus = GER_merge_the_spd_and_kpd focus = GER_stay_neutral }
 		#mutually_exclusive = { focus = GER_recruit_communists}
-		x = 3
+		x = 5
 		y = 5
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -230,6 +232,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+
 		clr_country_flag = kaiser
 		news_event = { id = news.1 }
 		country_event = { id = germany.131 }
@@ -237,6 +240,15 @@ focus = {
 			name = "Ernst Thälmann"
 			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
 			picture = "Ernst_Thalmann_Portrait.dds"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+			}
+		}
+		create_country_leader = {
+			name = "Theodor Huess"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Portrait_Theodor_Huess.dds"
 			expire = "1965.1.1"
 			ideology = marxism
 			traits = {
@@ -259,17 +271,26 @@ focus = {
 		start_civil_war = {
 				ideology = authoritarianism
 				size = 0.5
-				capital = 763
-				states = { 67 762 66 68 63 85 86 5 763 188 4 152 69 181 153 39}
+				capital = 52
+				states = { 67 762 66 68 63 85 86 5 763 188 4 152 69 181 153 39 65 64 61 53 52 62 }
 				set_cosmetic_tag = GER_loyalists
+			}
+			GER = {
+			add_ideas = {
+				incompetent_general_staff
+				militia_based_army
+				weak_economy
+				down_with_monarchism
+			}
 			}
 	    }
     }
 
     focus = {
 		id = GER_democratic_regime
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_gerdem
 		prerequisite = { focus = GER_political_advancment }
+		mutually_exclusive = { focus = GER_communists_will_rise_again }
 		x = 13
 		y = 1
 		cost = 10
@@ -288,7 +309,7 @@ focus = {
 
 	focus = {
 		id = GER_elect_hitler
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_elect_hitler
 		prerequisite = { focus = GER_democratic_regime }
 		mutually_exclusive = { focus = GER_elect_huess }
 		x = 10
@@ -312,7 +333,7 @@ focus = {
 
 	focus = {
 		id = GER_elect_huess
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_elect_huess
 		prerequisite = { focus = GER_democratic_regime }
 		mutually_exclusive = { focus = GER_elect_hitler }
 		x = 16
@@ -337,7 +358,7 @@ focus = {
 
 	focus = {
 		id = GER_liberals_continue
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GER_elect_hitler }
 		mutually_exclusive = { focus = GER_purge_the_liberals focus = GER_the_1_party_policy }
 		x = 12
@@ -353,7 +374,7 @@ focus = {
 
 	focus = {
 		id = GER_purge_the_liberals
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_purge_the_liberals
 		prerequisite = { focus = GER_elect_hitler }
 		mutually_exclusive = { focus = GER_the_1_party_policy focus = GER_liberals_continue }
 		x = 10
@@ -372,7 +393,7 @@ focus = {
 
 	focus = {
 		id = GER_the_1_party_policy
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_single_party_policy
 		prerequisite = { focus = GER_elect_hitler }
 		mutually_exclusive = { focus = GER_purge_the_liberals }
 		x = 8
@@ -382,6 +403,143 @@ focus = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
+		country_event = { id = germany.133 }
+		}
+	}
+
+	focus = {
+		id = GER_help_from_the_us
+		icon = GFX_german_american_cooperation
+		prerequisite = { focus = GER_elect_huess }
+		mutually_exclusive = {focus = GER_crush_the_conservatives focus = GER_negotiate_with_hitler }
+		x = 18
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		country_event = { id = germany.134 }
+		}
+	}
+
+	focus = {
+		id = GER_crush_the_conservatives
+		icon = GFX_crush_conservatives
+		prerequisite = { focus = GER_elect_huess }
+		mutually_exclusive = { focus = GER_help_from_the_us focus = GER_negotiate_with_hitler }
+		x = 16
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 65
+	democratic = 37
+	communism = 3
+	}
+		}
+	}
+
+	focus = {
+		id = GER_negotiate_with_hitler
+		icon = GFX_negotiate_hitler
+		prerequisite = { focus = GER_elect_huess }
+		mutually_exclusive = { focus = GER_crush_the_conservatives focus = GER_help_from_the_us }
+		x = 14
+		y = 3
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		country_event = { id = germany.135 }
+		}
+	}
+
+	focus = {
+		id = GER_rally_in_berlin_1
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = GER_crush_the_conservatives focus = GER_negotiate_with_hitler focus = GER_help_from_the_us }
+		#mutually_exclusive = { focus = GER_purge_the_liberals }
+		x = 16
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 65
+	democratic = 37
+	communism = 3
+	}
+		}
+	}
+
+	focus = {
+		id = GER_rally_in_berlin_2
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = GER_the_1_party_policy focus = GER_purge_the_liberals focus = GER_liberals_continue }
+		#mutually_exclusive = { focus = GER_purge_the_liberals }
+		x = 10
+		y = 4
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 65
+	democratic = 37
+	communism = 3
+	}
+		}
+	}
+
+	focus = {
+		id = GER_uprising
+		icon = GFX_german_uprising
+		prerequisite = { focus = GER_rally_in_berlin_1 focus = GER_rally_in_berlin_2 }
+		#mutually_exclusive = { focus = GER_purge_the_liberals }
+		x = 13
+		y = 5
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		create_country_leader = {
+			name = "Ernst Thälmann"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Ernst_Thalmann_Portrait.dds"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+			}
+		}
+		create_country_leader = {
+			name = "Ruprecht von Bayern"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Ruprecht_Von_Bayern_Portraitt.dds"
+			expire = "1965.1.1"
+			ideology = monarchy
+			traits = {
+			}
+		}
+		country_event = { id = germany.136 }
+		set_politics = {
+                    ruling_party = democratic
+                }
+		start_civil_war = {
+				ideology = authoritarianism
+				size = 0.5
+				capital = 52
+				states = { 4 152 153 39 52 50 53 69 762 67 66 86 85 5 763 188 }
+				set_cosmetic_tag = GER_loyalists
+			}
 		}
 	}
 }

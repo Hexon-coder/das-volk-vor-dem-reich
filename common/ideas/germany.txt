@@ -21,6 +21,89 @@ ideas = {
 				can_create_factions = yes
 			}
 		}
+
+		incompetent_general_staff = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_Factor = -0.10
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+
+		militia_based_army = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				attack_bonus_against = -0.30
+				defense_bonus_against = -0.30
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+
+		weak_economy = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.20
+				production_factory_efficiency_gain_factor = -0.15
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+
+		down_with_monarchism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				authoritarianism_drift = -0.10
+				communism_drift = 0.10
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
 		
 		general_staff = {
 			

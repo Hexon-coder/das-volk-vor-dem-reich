@@ -273,6 +273,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			country_event = {
+				id = qing.2
+			}
+			create_country_leader = {
+				name = "Yuan Shikai"
+				desc = "YUAN_SHIKAI_DESC"
+				picture = "Portrait_Yuan_Shikai.dds"
+				expire = "1965.1.1"
+				ideology = authoritarian_democratic
+				traits = {
+					
+				}
+			}
+		}
 	}
 
 	#Focus for Examination Yuan
