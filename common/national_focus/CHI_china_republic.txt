@@ -907,7 +907,7 @@ focus_tree = {
 		prerequisite = { focus = CHI_reestablish_elections }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		completion_reward = {
-			ENG = {
+			FRA = {
 				country_event = {
 					id = qing.1
 				}

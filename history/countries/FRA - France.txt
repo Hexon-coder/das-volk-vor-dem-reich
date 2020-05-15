@@ -1,5 +1,17 @@
 ﻿capital = 16
 
+create_faction = Entente
+add_to_faction = FRA
+add_to_faction = ENG
+add_to_faction = CAN
+add_to_faction = AST
+add_to_faction = NZL
+add_to_faction = SAF
+add_to_faction = JAP
+add_to_faction = RAJ		# Must be after puppet
+add_to_faction = MAL
+add_to_faction = USA
+
 oob = "FRA_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

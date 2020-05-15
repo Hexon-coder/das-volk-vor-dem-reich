@@ -125,7 +125,7 @@ set_popularities = {
 	democratic = 30
 }
 
-create_faction = Fünfkaiserbund
+create_faction = Kaiserbund
 add_to_faction = GER
 add_to_faction = CHI
 add_to_faction = AUS
