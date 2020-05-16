@@ -1,0 +1,621 @@
+focus_tree = {
+	id = SOV
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	#Focus for A New State
+	focus = {
+		id = Russia_a_new_state
+		icon = GFX_goal_generic_political_pressure
+		x = 10
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_politcal_power = 50
+		}
+	}
+
+	#Focus for Conservatism
+	focus = {
+		id = Russia_conservatism
+		icon = GFX_goal_generic_territory_or_war
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_the_presidency }
+		mutually_exclusive = { focus = Russia_liberalism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		create_country_leader = {
+			name = "Alexandr Kerensky"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Alexandr_Kerensky_portrait.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			}
+		}
+		}
+	}
+
+	#Focus for Liberalism
+	focus = {
+		id = Russia_liberalism
+		icon = GFX_goal_support_democracy
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_the_presidency }
+		mutually_exclusive = { focus = Russia_conservatism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		create_country_leader = {
+			name = "Pyotr Stolypin"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Pyotr_Stolypin_Portrait.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+			}
+		}
+		}
+	}
+
+	#Focus for A Freer State
+	focus = {
+		id = Russia_a_freer_state
+		icon = GFX_goal_generic_political_pressure
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Russia_a_more_of_a_democratic_path 
+			focus = Russia_a_more_of_a_communist_path 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 66
+	democratic = 16
+	communism = 18
+	        }
+	        add_stability = 0.05
+		}
+	}
+
+	#Focus for A More of a Democratic Path
+	focus = {
+		id = Russia_a_more_of_a_democratic_path
+		icon = GFX_goal_support_democracy
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_a_council }
+		mutually_exclusive = { focus = Russia_a_more_of_a_communist_path }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		comintern_influence
+		}
+		}
+	}
+
+	#Focus for A More of A Communist Path
+	focus = {
+		id = Russia_a_more_of_a_communist_path
+		icon = GFX_goal_support_communism
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_a_council }
+		mutually_exclusive = { focus = Russia_a_more_of_a_democratic_path }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		workers_culture
+		}
+		}
+	}
+
+	#Focus for More Soldiers
+	focus = {
+		id = Russia_more_soldiers
+		icon = GFX_focus_generic_little_entente
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_an_socdem_state }
+		mutually_exclusive = { focus = Russia_more_jobs_in_the_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		219 = { add_manpower = 5000}
+		137 = { add_manpower = 5000}
+		408 = { add_manpower = 5000}
+		}
+	}
+
+	#Focus for A Council
+	focus = {
+		id = Russia_a_council
+		icon = GFX_focus_usa_union_representation_act
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_stand_with_the_social_revolutionaries }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		create_country_leader = {
+			name = "Social Revolutionary Council"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Social_Revolutionary_Council_Portrait.dds"
+			expire = "1965.1.1"
+			ideology = social_democrat
+			traits = {
+			}
+		}
+		}
+	}
+
+	#Focus for Let the Peasants Rise!
+	focus = {
+		id = Russia_let_the_peasants_rise
+		icon = GFX_goal_generic_political_pressure
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_support_the_mensheviks }
+		mutually_exclusive = { focus = Russia_promise_everyone_a_voice }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = {
+		comintern_influence
+		}
+		}
+	}
+
+	#Focus for Promise Everyone a Voice
+	focus = {
+		id = Russia_promise_everyone_a_voice
+		icon = GFX_goal_generic_propaganda
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_support_the_mensheviks }
+		mutually_exclusive = { focus = Russia_let_the_peasants_rise }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 62
+	democratic = 16
+	communism = 22
+	        }
+		}
+	}
+
+	#Focus for Support the Socialists
+	focus = {
+		id = Russia_support_the_socialists
+		icon = GFX_focus_generic_join_comintern
+		x = 5
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_a_new_state }
+		mutually_exclusive = { focus = Russia_support_the_democrats }
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 74
+	democratic = 16
+	communism = 10
+	        }
+		}
+	}
+
+	#Focus for Support the Bolsheviks
+	focus = {
+		id = Russia_support_the_bolsheviks
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_support_the_socialists }
+		mutually_exclusive = { focus = Russia_support_the_mensheviks }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 69
+	democratic = 16
+	communism = 15
+	        }
+		}
+	}
+
+	#Focus for Support the Mensheviks
+	focus = {
+		id = Russia_support_the_mensheviks
+		icon = GFX_goal_tripartite_pact
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_support_the_socialists }
+		mutually_exclusive = { 
+			focus = Russia_support_the_bolsheviks 
+		}
+		mutually_exclusive = { 
+			focus = Russia_stand_with_the_social_revolutionaries 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		create_country_leader = {
+			name = "Noe Zhordania"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Noe_Zhordania_Portrait.dds"
+			expire = "1965.1.1"
+			ideology = anarchist_communism
+			traits = {
+			}
+		}
+		}
+	}
+
+	#Focus for Stand With the Social Revolutionaries
+	focus = {
+		id = Russia_stand_with_the_social_revolutionaries
+		icon = GFX_goal_support_communism
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_support_the_socialists }
+		mutually_exclusive = { focus = Russia_support_the_mensheviks }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 66
+	democratic = 16
+	communism = 18
+	}
+		}
+	}
+
+	#Focus for Support the Democrats
+	focus = {
+		id = Russia_support_the_democrats
+		icon = GFX_goal_support_democracy
+		x = 15
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_a_new_state }
+		mutually_exclusive = { focus = Russia_support_the_socialists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 59
+	democratic = 23
+	communism = 18
+	}
+		}
+	}
+
+	#Focus for The Presidency
+	focus = {
+		id = Russia_the_presidency
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 15
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_support_the_democrats }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 55
+	democratic = 27
+	communism = 18
+	}
+		}
+	}
+
+	#Focus for Elect Bogdanov
+	focus = {
+		id = Russia_elect_bogdanov
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_support_the_bolsheviks }
+		mutually_exclusive = { focus = Russia_elect_lenin }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		create_country_leader = {
+			name = "Alexander Bogdanov"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Alexander_Bagdanov_Portrait.dds"
+			expire = "1965.1.1"
+			ideology = leninism
+			traits = {
+			}
+		}
+		}
+	}
+
+	#Focus for Elect Lenin
+	focus = {
+		id = Russia_elect_lenin
+		icon = GFX_goal_support_communism
+		x = 0
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_support_the_bolsheviks }
+		mutually_exclusive = { focus = Russia_elect_bogdanov }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		create_country_leader = {
+			name = "Vladimir Lenin"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Vladimir_Lenin_portrait.dds"
+			expire = "1965.1.1"
+			ideology = leninism
+			traits = {
+			}
+		}
+		}
+	}
+
+	#Focus for Promise a Better State
+	focus = {
+		id = Russia_promise_a_better_state
+		icon = GFX_goal_generic_propaganda
+		x = 1
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Russia_elect_bogdanov 
+			focus = Russia_elect_lenin 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 100
+		}
+	}
+
+	#Focus for A Bigger Army
+	focus = {
+		id = Russia_a_bigger_army
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_promise_a_better_state }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		219 = { add_manpower = 5000}
+		137 = { add_manpower = 5000}
+		408 = { add_manpower = 5000}
+		}
+	}
+
+	#Focus for More Workers
+	focus = {
+		id = Russia_more_workers
+		icon = GFX_goal_support_communism
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_promise_a_better_state }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		219 = { add_manpower = 10000}
+		}
+	}
+
+	#Focus for An Socialist-Democratic State
+	focus = {
+		id = Russia_an_socdem_state
+		icon = GFX_goal_generic_war_with_comintern
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Russia_promise_everyone_a_voice 
+			focus = Russia_let_the_peasants_rise 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 54
+	democratic = 16
+	communism = 30
+	        }
+		}
+	}
+
+	#Focus for More Jobs in the Industry
+	focus = {
+		id = Russia_more_jobs_in_the_industry
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 4
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_an_socdem_state }
+		mutually_exclusive = { focus = Russia_more_soldiers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		219 = { add_manpower = 3000}
+		}
+	}
+
+	#Focus for Anti-Communist Beleifs
+	focus = {
+		id = Russia_anticommunist_beleifs
+		icon = GFX_goal_support_communism
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Russia_conservatism 
+			focus = Russia_liberalism 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		set_popularities = {
+	authoritarianism = 60
+	democratic = 30
+	communism = 10
+	        }
+		}
+	}
+
+	#Focus for The Greatest Economy
+	focus = {
+		id = Russia_the_greatest_economy
+		icon = GFX_goal_generic_production
+		x = 14
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_anticommunist_beleifs }
+		mutually_exclusive = { focus = Russia_the_greatest_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		408 = {
+    add_extra_state_shared_building_slots = 15
+    add_building_construction = {
+        type = industrial_complex
+        level = 15
+        instant_build = yes
+    }
+}
+
+137 = {
+    add_extra_state_shared_building_slots = 15
+    add_building_construction = {
+        type = industrial_complex
+        level = 15
+        instant_build = yes
+    }
+}
+		}
+	}
+
+	#Focus for The Greatest Army
+	focus = {
+		id = Russia_the_greatest_army
+		icon = GFX_goal_generic_air_doctrine
+		x = 16
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Russia_anticommunist_beleifs }
+		mutually_exclusive = { focus = Russia_the_greatest_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	#Focus for The Russian Revolution
+	focus = {
+		id = Russia_the_russian_revolution
+		icon = GFX_goal_generic_political_pressure
+		x = 9
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Russia_the_greatest_army 
+			focus = Russia_the_greatest_economy 
+			focus = Russia_a_freer_state 
+			focus = Russia_a_bigger_army 
+			focus = Russia_more_workers 
+			focus = Russia_a_bigger_army 
+			focus = Russia_more_jobs_in_the_industry 
+			focus = Russia_more_soldiers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		137 = { add_manpower = 5000}
+		408 = { add_manpower = 5000}
+		}
+	}
+
+#End of focuses 
+ }
