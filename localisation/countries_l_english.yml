@@ -3126,3 +3126,7 @@
  CHI_authoritarianism:0 "Qing"
  CHI_authoritarianism_ADJ:0 "Qing"
  CHI_authoritarianism_DEF:0 "the Qing Dynasty"
+ SOV_soc_rev_communism:0 "Social Revolutionary Russia"
+ SOV_rev_communism:0 "Revolutionary Russia"
+ SOV_sov_communism:0 "Russia SFSR"
+ SOV_dem_democratic:0 "Russian Federal Republic"

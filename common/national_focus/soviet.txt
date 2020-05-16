@@ -46,6 +46,7 @@ focus_tree = {
 			traits = {
 			}
 		}
+		set_country_flag = elected_kerensky
 		}
 	}
 
@@ -387,6 +388,7 @@ focus_tree = {
 			traits = {
 			}
 		}
+		set_country_flag = elected_boogaloo
 		}
 	}
 
@@ -612,8 +614,482 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		137 = { add_manpower = 5000}
-		408 = { add_manpower = 5000}
+			137 = { add_manpower = 5000}
+			408 = { add_manpower = 5000}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = chosen_soc_rev
+					}
+					start_civil_war = { #Social Revolutionists Uprising
+						ruling_party = communism
+						ideology = authoritarianism
+						size = 0.5
+					}
+					start_civil_war = { #Soviet Uprising
+						ruling_party = communism
+						ideology = communism
+						size = 0.1
+					}
+					random_other_country = {
+						limit = {
+							original_tag = SOV
+							has_government = communism
+							not = {
+								has_country_flag = processed
+							}
+						}
+						if {
+							limit = {
+								has_country_flag = elected_boogaloo
+							}
+							create_country_leader = {
+								name = "Alexander Bogdanov"
+								desc = "POLITICS_BAGDANOV_DESC"
+								picture = "Alexander_Bagdanov_Portrait.dds"
+								expire = "1965.1.1"
+								ideology = marxism
+								traits = {
+									#
+								}
+							}
+						}
+						if {
+							limit = {
+								not = { has_country_flag = elected_boogaloo }
+							}
+							create_country_leader = {
+								name = "Vladimir Lenin"
+								desc = "POLITICS_LENIN_DESC"
+								picture = "Vladimir_Lenin_portrait.dds"
+								expire = "1965.1.1"
+								ideology = marxism
+								traits = {
+									#
+								}
+							}
+						}
+						set_country_flag = processed
+						set_cosmetic_tag = SOV_sov
+					}
+					start_civil_war = { #Revolutionists Uprising
+						ruling_party = communism
+						ideology = communism
+						size = 0.1
+					}
+					random_other_country = {
+						limit = {
+							original_tag = SOV
+							has_government = communism
+							not = {
+								has_country_flag = processed
+							}
+						}
+						create_country_leader = {
+							name = "Noe Zhordania"
+							desc = "POLITICS_ZHORDANIA_DESC"
+							picture = "Noe_Zhordania_Portrait.dds"
+							expire = "1965.1.1"
+							ideology = marxism
+							traits = {
+								#
+							}
+						}
+						set_country_flag = processed
+						set_cosmetic_tag = SOV_rev
+					}
+					start_civil_war = { #Democratic Uprising
+						ruling_party = communism
+						ideology = democratic
+						size = 0.1
+					}
+					random_other_country = {
+						limit = {
+							original_tag = SOV
+							has_government = democratic
+							not = {
+								has_country_flag = processed
+							}
+						}
+						if {
+							limit = {
+								has_country_flag = elected_kerensky
+							}
+							create_country_leader = {
+								name = "Alexander Kerensky"
+								desc = "POLITICS_KERENSKY_DESC"
+								picture = "Alexandr_Kerensky_portrait.dds"
+								expire = "1965.1.1"
+								ideology = socialism
+								traits = {
+									#
+								}
+							}
+						}
+						if {
+							limit = {
+								not = { has_country_flag = elected_kerensky }
+							}
+							create_country_leader = {
+								name = "Pyotr Stolypin"
+								desc = "POLITICS_LENIN_DESC"
+								picture = "Pyotr_Stolypin_Portrait.dds"
+								expire = "1965.1.1"
+								ideology = socialism
+								traits = {
+									#
+								}
+							}
+						}
+						set_country_flag = processed
+						set_cosmetic_tag = SOV_dem
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = chosen_rev
+					}
+					start_civil_war = { #Revolutionists Uprising
+						ruling_party = communism
+						ideology = authoritarianism
+						size = 0.5
+					}
+					start_civil_war = { #Soviet Uprising
+						ruling_party = communism
+						ideology = communism
+						size = 0.1
+					}
+					random_other_country = {
+						limit = {
+							original_tag = SOV
+							has_government = communism
+							not = {
+								has_country_flag = processed
+							}
+						}
+						if {
+							limit = {
+								has_country_flag = elected_boogaloo
+							}
+							create_country_leader = {
+								name = "Alexander Bogdanov"
+								desc = "POLITICS_BAGDANOV_DESC"
+								picture = "Alexander_Bagdanov_Portrait.dds"
+								expire = "1965.1.1"
+								ideology = marxism
+								traits = {
+									#
+								}
+							}
+						}
+						if {
+							limit = {
+								not = { has_country_flag = elected_boogaloo }
+							}
+							create_country_leader = {
+								name = "Vladimir Lenin"
+								desc = "POLITICS_LENIN_DESC"
+								picture = "Vladimir_Lenin_portrait.dds"
+								expire = "1965.1.1"
+								ideology = marxism
+								traits = {
+									#
+								}
+							}
+						}
+						set_country_flag = processed
+						set_cosmetic_tag = SOV_sov
+					}
+					start_civil_war = { #Social Revolutionists Uprising
+						ruling_party = communism
+						ideology = communism
+						size = 0.1
+					}
+					random_other_country = {
+						limit = {
+							original_tag = SOV
+							has_government = communism
+							not = {
+								has_country_flag = processed
+							}
+						}
+						create_country_leader = {
+							name = "Social Revolutionary Council"
+							desc = "POLITICS_REV_COUNCIL_DESC"
+							picture = "Social_Revolutionary_Council_Portrait.dds"
+							expire = "1965.1.1"
+							ideology = marxism
+							traits = {
+								#
+							}
+						}
+						set_country_flag = processed
+						set_cosmetic_tag = SOV_soc_rev
+					}
+					start_civil_war = { #Democratic Uprising
+						ruling_party = communism
+						ideology = democratic
+						size = 0.1
+					}
+					random_other_country = {
+						limit = {
+							original_tag = SOV
+							has_government = democratic
+							not = {
+								has_country_flag = processed
+							}
+						}
+						if {
+							limit = {
+								has_country_flag = elected_kerensky
+							}
+							create_country_leader = {
+								name = "Alexander Kerensky"
+								desc = "POLITICS_KERENSKY_DESC"
+								picture = "Alexandr_Kerensky_portrait.dds"
+								expire = "1965.1.1"
+								ideology = socialism
+								traits = {
+									#
+								}
+							}
+						}
+						if {
+							limit = {
+								not = { has_country_flag = elected_kerensky }
+							}
+							create_country_leader = {
+								name = "Pyotr Stolypin"
+								desc = "POLITICS_STOLYPIN_DESC"
+								picture = "Pyotr_Stolypin_Portrait.dds"
+								expire = "1965.1.1"
+								ideology = socialism
+								traits = {
+									#
+								}
+							}
+						}
+						set_country_flag = processed
+						set_cosmetic_tag = SOV_dem
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = chosen_sov
+					}
+					start_civil_war = { #Soviet Uprising
+						ruling_party = communism
+						ideology = authoritarianism
+						size = 0.5
+					}
+					start_civil_war = { #Social Revolutionary Uprising
+						ruling_party = communism
+						ideology = communism
+						size = 0.1
+					}
+					random_other_country = {
+						limit = {
+							original_tag = SOV
+							has_government = communism
+							not = {
+								has_country_flag = processed
+							}
+						}
+						create_country_leader = {
+							name = "Social Revolutionary Council"
+							desc = "POLITICS_REV_COUNCIL_DESC"
+							picture = "Social_Revolutionary_Council_Portrait.dds"
+							expire = "1965.1.1"
+							ideology = marxism
+							traits = {
+								#
+							}
+						}
+						set_country_flag = processed
+						set_cosmetic_tag = SOV_soc_rev
+					}
+					start_civil_war = { #Revolutionists Uprising
+						ruling_party = communism
+						ideology = communism
+						size = 0.1
+					}
+					random_other_country = {
+						limit = {
+							original_tag = SOV
+							has_government = communism
+							not = {
+								has_country_flag = processed
+							}
+						}
+						create_country_leader = {
+							name = "Noe Zhordania"
+							desc = "POLITICS_ZHORDANIA_DESC"
+							picture = "Noe_Zhordania_Portrait.dds"
+							expire = "1965.1.1"
+							ideology = marxism
+							traits = {
+								#
+							}
+						}
+						set_country_flag = processed
+						set_cosmetic_tag = SOV_rev
+					}
+					start_civil_war = { #Democratic Uprising
+						ruling_party = communism
+						ideology = democratic
+						size = 0.1
+					}
+					random_other_country = {
+						limit = {
+							original_tag = SOV
+							has_government = democratic
+							not = {
+								has_country_flag = processed
+							}
+						}
+						if {
+							limit = {
+								has_country_flag = elected_kerensky
+							}
+							create_country_leader = {
+								name = "Alexander Kerensky"
+								desc = "POLITICS_KERENSKY_DESC"
+								picture = "Alexandr_Kerensky_portrait.dds"
+								expire = "1965.1.1"
+								ideology = socialism
+								traits = {
+									#
+								}
+							}
+						}
+						if {
+							limit = {
+								not = { has_country_flag = elected_kerensky }
+							}
+							create_country_leader = {
+								name = "Pyotr Stolypin"
+								desc = "POLITICS_LENIN_DESC"
+								picture = "Pyotr_Stolypin_Portrait.dds"
+								expire = "1965.1.1"
+								ideology = socialism
+								traits = {
+									#
+								}
+							}
+						}
+						set_country_flag = processed
+						set_cosmetic_tag = SOV_dem
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = chosen_soc_dem
+					}
+					start_civil_war = { #Democratic Uprising
+						ruling_party = democratic
+						ideology = authoritarianism
+						size = 0.5
+					}
+					start_civil_war = { #Soviet Uprising
+						ruling_party = democratic
+						ideology = communism
+						size = 0.1
+					}
+					random_other_country = {
+						limit = {
+							original_tag = SOV
+							has_government = communism
+							not = {
+								has_country_flag = processed
+							}
+						}
+						if {
+							limit = {
+								has_country_flag = elected_boogaloo
+							}
+							create_country_leader = {
+								name = "Alexander Bogdanov"
+								desc = "POLITICS_BAGDANOV_DESC"
+								picture = "Alexander_Bagdanov_Portrait.dds"
+								expire = "1965.1.1"
+								ideology = marxism
+								traits = {
+									#
+								}
+							}
+						}
+						if {
+							limit = {
+								not = { has_country_flag = elected_boogaloo }
+							}
+							create_country_leader = {
+								name = "Vladimir Lenin"
+								desc = "POLITICS_LENIN_DESC"
+								picture = "Vladimir_Lenin_portrait.dds"
+								expire = "1965.1.1"
+								ideology = marxism
+								traits = {
+									#
+								}
+							}
+						}
+						set_country_flag = processed
+						set_cosmetic_tag = SOV_sov
+					}
+					start_civil_war = { #Revolutionists Uprising
+						ruling_party = democratic
+						ideology = communism
+						size = 0.1
+					}
+					random_other_country = {
+						limit = {
+							original_tag = SOV
+							has_government = communism
+							not = {
+								has_country_flag = processed
+							}
+						}
+						create_country_leader = {
+							name = "Noe Zhordania"
+							desc = "POLITICS_ZHORDANIA_DESC"
+							picture = "Noe_Zhordania_Portrait.dds"
+							expire = "1965.1.1"
+							ideology = marxism
+							traits = {
+								#
+							}
+						}
+						set_country_flag = processed
+						set_cosmetic_tag = SOV_rev
+					}
+					start_civil_war = { #Social Revolutionary Uprising
+						ruling_party = democratic
+						ideology = communism
+						size = 0.1
+					}
+					random_other_country = {
+						limit = {
+							original_tag = SOV
+							has_government = communism
+							not = {
+								has_country_flag = processed
+							}
+						}
+						create_country_leader = {
+							name = "Social Revolutionary Council"
+							desc = "POLITICS_REV_COUNCIL_DESC"
+							picture = "Social_Revolutionary_Council_Portrait.dds"
+							expire = "1965.1.1"
+							ideology = marxism
+							traits = {
+								#
+							}
+						}
+						set_country_flag = processed
+						set_cosmetic_tag = SOV_soc_rev
+					}
+				}
+			}
 		}
 	}
 
