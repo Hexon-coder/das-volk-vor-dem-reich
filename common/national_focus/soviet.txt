@@ -1096,6 +1096,4 @@ focus_tree = {
 			}
 		}
 	}
-
-#End of focuses 
- }
+}
