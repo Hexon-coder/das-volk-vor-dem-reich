@@ -261,6 +261,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		set_country_flag = chosen_sov
 		set_popularities = {
 	authoritarianism = 69
 	democratic = 16
@@ -288,6 +289,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		set_country_flag = chosen_rev
 		create_country_leader = {
 			name = "Noe Zhordania"
 			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
@@ -314,6 +316,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		set_country_flag = chosen_soc_rev
 		set_popularities = {
 	authoritarianism = 66
 	democratic = 16
@@ -336,6 +339,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+		set_country_flag = chosen_dem
 		set_popularities = {
 	authoritarianism = 59
 	democratic = 23
@@ -983,7 +987,7 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_country_flag = chosen_soc_dem
+						has_country_flag = chosen_dem
 					}
 					start_civil_war = { #Democratic Uprising
 						ruling_party = democratic
