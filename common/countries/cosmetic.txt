@@ -378,3 +378,19 @@ GER_loyalists = {
 	color = rgb { 128 128 128 }
 	color_ui = rgb { 115 115 115 }
 }
+SOV_RRU = {
+	color = rgb { 255 84 84 }
+	color_ui = rgb { 255 84 84 }
+}
+SOV_SSR = {
+	color = rgb { 204 0 0 }
+	color_ui = rgb { 204 0 0 }
+}
+SOV_RFR = {
+	color = rgb { 0 0 102 }
+	color_ui = rgb { 0 0 102 }
+}
+SOV_RSF = {
+	color = rgb { 102 0 0 }
+	color_ui = rgb { 102 0 0 }
+}

@@ -205,3 +205,8 @@ COR = "countries/Corsica.txt"
 ### CUSTOM
 GAF = "countries/Deutsche Afrika.txt"
 DES = "countries/Deutsch-Samoa.txt"
+######### Russian Revolution
+RRU = "countries/Revolutionary Russia"
+SSR = "countries/Social-Revolutionary Russia"
+RFR = "countries/Russian Federal Republic"
+RSF = "countries/Russian SFSR"

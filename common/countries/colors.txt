@@ -716,3 +716,19 @@ DES = {
 	color = rgb { 63 61 61 }
 	color_ui = rgb { 63 61 61 }
 }
+RRU = {
+	color = rgb { 255 84 84 }
+	color_ui = rgb { 255 84 84 }
+}
+SSR = {
+	color = rgb { 204 0 0 }
+	color_ui = rgb { 204 0 0 }
+}
+RFR = {
+	color = rgb { 0 0 102 }
+	color_ui = rgb { 0 0 102 }
+}
+RSF = {
+	color = rgb { 102 0 0 }
+	color_ui = rgb { 102 0 0 }
+}
