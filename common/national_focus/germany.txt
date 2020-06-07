@@ -276,6 +276,7 @@ focus = {
 				set_cosmetic_tag = GER_loyalists
 			}
 			GER = {
+			leave_faction
 			add_ideas = {
 				incompetent_general_staff
 				militia_based_army
@@ -511,6 +512,7 @@ focus = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
+		leave_faction
 		create_country_leader = {
 			name = "Ernst Thälmann"
 			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
