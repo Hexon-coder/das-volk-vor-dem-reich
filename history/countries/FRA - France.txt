@@ -229,15 +229,15 @@ set_convoys = 300
 
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 64
-	authoritarianism = 16
-	communism = 20
+	democratic = 33
+	authoritarianism = 34
+	communism = 33
 }
 
 add_ideas = {
