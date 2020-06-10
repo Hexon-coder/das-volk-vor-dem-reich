@@ -123,7 +123,7 @@ bookmarks = {
 			}		
 		}
 		"AUS"={
-			history = "JAP_GATHERING_STORM_DESC"
+			history = "AUS_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 			}	
