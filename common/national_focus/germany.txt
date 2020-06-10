@@ -44,7 +44,7 @@ focus_tree = {
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = GER_political_advancment }
 		mutually_exclusive = { focus = GER_democratic_regime }
-		x = 5
+		x = 3
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -65,7 +65,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = GER_communists_will_rise_again }
 		mutually_exclusive = { focus = GER_kpd_gain_popularity }
-		x = 4
+		x = 2
 		y = 2
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -82,7 +82,7 @@ focus = {
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = GER_communists_will_rise_again }
 		mutually_exclusive = { focus = GER_for_the_kpd }
-		x = 6
+		x = 4
 		y = 2
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -104,7 +104,7 @@ focus = {
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = GER_for_the_kpd focus = GER_kpd_gain_popularity }
 		mutually_exclusive = { focus = GER_rally_in_berlin }
-		x = 6
+		x = 4
 		y = 3
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -126,7 +126,7 @@ focus = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = GER_for_the_kpd focus = GER_kpd_gain_popularity }
 		mutually_exclusive = { focus = GER_recruit_communists }
-		x = 4
+		x = 2
 		y = 3
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -147,7 +147,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = GER_rally_in_berlin focus = GER_recruit_communists }
 		mutually_exclusive = { focus = GER_crush_the_spd focus = GER_merge_the_spd_and_kpd }
-		x = 5
+		x = 3
 		y = 4
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -168,7 +168,7 @@ focus = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = GER_rally_in_berlin focus = GER_recruit_communists }
 		mutually_exclusive = { focus = GER_stay_neutral focus = GER_crush_the_spd }
-		x = 7
+		x = 5
 		y = 4
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -200,7 +200,7 @@ focus = {
 		icon = GFX_crush_spd
 		prerequisite = { focus = GER_rally_in_berlin focus = GER_recruit_communists }
 		mutually_exclusive = { focus = GER_merge_the_spd_and_kpd focus = GER_stay_neutral }
-		x = 3
+		x = 1
 		y = 4
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -224,7 +224,7 @@ focus = {
 		icon = GFX_assassinate_the_kaiser
 		prerequisite = { focus = GER_crush_the_spd focus = GER_merge_the_spd_and_kpd focus = GER_stay_neutral }
 		#mutually_exclusive = { focus = GER_recruit_communists}
-		x = 5
+		x = 3
 		y = 5
 		cost = 10
 		search_filters = {  FOCUS_FILTER_POLITICAL }
@@ -292,7 +292,7 @@ focus = {
 		icon = GFX_gerdem
 		prerequisite = { focus = GER_political_advancment }
 		mutually_exclusive = { focus = GER_communists_will_rise_again }
-		x = 13
+		x = 15
 		y = 1
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -313,7 +313,7 @@ focus = {
 		icon = GFX_elect_hitler
 		prerequisite = { focus = GER_democratic_regime }
 		mutually_exclusive = { focus = GER_elect_huess }
-		x = 10
+		x = 12
 		y = 2
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -337,7 +337,7 @@ focus = {
 		icon = GFX_elect_huess
 		prerequisite = { focus = GER_democratic_regime }
 		mutually_exclusive = { focus = GER_elect_hitler }
-		x = 16
+		x = 18
 		y = 2
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -378,7 +378,7 @@ focus = {
 		icon = GFX_purge_the_liberals
 		prerequisite = { focus = GER_elect_hitler }
 		mutually_exclusive = { focus = GER_the_1_party_policy focus = GER_liberals_continue }
-		x = 10
+		x = 14
 		y = 3
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -397,7 +397,7 @@ focus = {
 		icon = GFX_single_party_policy
 		prerequisite = { focus = GER_elect_hitler }
 		mutually_exclusive = { focus = GER_purge_the_liberals }
-		x = 8
+		x = 10
 		y = 3
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -413,7 +413,7 @@ focus = {
 		icon = GFX_german_american_cooperation
 		prerequisite = { focus = GER_elect_huess }
 		mutually_exclusive = {focus = GER_crush_the_conservatives focus = GER_negotiate_with_hitler }
-		x = 18
+		x = 20
 		y = 3
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -429,7 +429,7 @@ focus = {
 		icon = GFX_crush_conservatives
 		prerequisite = { focus = GER_elect_huess }
 		mutually_exclusive = { focus = GER_help_from_the_us focus = GER_negotiate_with_hitler }
-		x = 16
+		x = 18
 		y = 3
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -449,7 +449,7 @@ focus = {
 		icon = GFX_negotiate_hitler
 		prerequisite = { focus = GER_elect_huess }
 		mutually_exclusive = { focus = GER_crush_the_conservatives focus = GER_help_from_the_us }
-		x = 14
+		x = 16
 		y = 3
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -465,7 +465,7 @@ focus = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = GER_crush_the_conservatives focus = GER_negotiate_with_hitler focus = GER_help_from_the_us }
 		#mutually_exclusive = { focus = GER_purge_the_liberals }
-		x = 16
+		x = 18
 		y = 4
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -485,7 +485,7 @@ focus = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = GER_the_1_party_policy focus = GER_purge_the_liberals focus = GER_liberals_continue }
 		#mutually_exclusive = { focus = GER_purge_the_liberals }
-		x = 10
+		x = 12
 		y = 4
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -505,7 +505,7 @@ focus = {
 		icon = GFX_german_uprising
 		prerequisite = { focus = GER_rally_in_berlin_1 focus = GER_rally_in_berlin_2 }
 		#mutually_exclusive = { focus = GER_purge_the_liberals }
-		x = 13
+		x = 15
 		y = 5
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -541,6 +541,967 @@ focus = {
 				capital = 52
 				states = { 4 152 153 39 52 50 53 69 762 67 66 86 85 5 763 188 }
 				set_cosmetic_tag = GER_loyalists
+			}
+		}
+	}
+
+	focus = {
+		id = GER_build_up_the_military
+		icon = GFX_military_act
+		prerequisite = { focus = GER_uprising }
+		mutually_exclusive = { focus = GER_focus_on_the_economy }
+		x = 19
+		y = 6
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		country_event = { id = germany.138 }
+		add_ideas = {
+		building_up_army_for_civ_war
+		}
+		}
+	}
+
+	focus = {
+		id = GER_focus_on_the_economy
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_uprising }
+		mutually_exclusive = { focus = GER_build_up_the_military }
+		x = 11
+		y = 6
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		country_event = { id = germany.137 }
+		add_ideas = {
+		building_up_economy_for_civ_war
+		}
+		}
+	}
+
+	focus = {
+		id = GER_trade_uk
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_focus_on_the_economy }
+		mutually_exclusive = { focus = GER_trade_us }
+		x = 9
+		y = 7
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		52 = {
+    add_extra_state_shared_building_slots = 15
+    add_building_construction = {
+        type = industrial_complex
+        level = 15
+        instant_build = yes
+    }
+}
+		add_opinion_modifier = { target = ENG modifier = medium_increase }
+		}
+	}
+
+	focus = {
+		id = GER_trade_us
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_focus_on_the_economy }
+		mutually_exclusive = { focus = GER_trade_uk }
+		x = 13
+		y = 7
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_opinion_modifier = { target = USA modifier = medium_increase }
+		52 = {
+    add_extra_state_shared_building_slots = 15
+    add_building_construction = {
+        type = industrial_complex
+        level = 15
+        instant_build = yes
+    }
+}
+		}
+	}
+
+	focus = {
+		id = GER_immigrants_france
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_trade_uk focus = GER_trade_us }
+		#mutually_exclusive = { focus = trade_us }
+		x = 11
+		y = 8
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		4 = { add_manpower = 5000}
+		152 = { add_manpower = 5000}
+		153 = { add_manpower = 5000}
+		39 = { add_manpower = 5000}
+		add_opinion_modifier = { target = FRA modifier = large_increase }
+		}
+	}
+
+	focus = {
+		id = GER_deals_uk
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_build_up_the_military }
+		mutually_exclusive = { focus = GER_deals_us }
+		x = 17
+		y = 7
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_resource = {
+    type = aluminium
+    amount = 30
+}
+add_resource = {
+    type = rubber
+    amount = 30
+}
+add_resource = {
+    type = tungsten
+    amount = 30
+}
+add_resource = {
+    type = steel
+    amount = 30
+}
+add_resource = {
+    type = chromium
+    amount = 30
+}
+	    
+		add_opinion_modifier = { target = ENG modifier = medium_increase }
+		}
+	}
+
+	focus = {
+		id = GER_deals_us
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_build_up_the_military }
+		mutually_exclusive = { focus = GER_deals_uk }
+		x = 21
+		y = 7
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+				add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 3100
+    producer = GER
+}
+add_equipment_to_stockpile = {
+    type = motorized_equipment
+    amount = 170
+    producer = GER
+}
+add_equipment_to_stockpile = {
+    type = heavy_tank_equipment
+    amount = 170
+    producer = GER
+}
+add_equipment_to_stockpile = {
+    type = medium_tank_equipment
+    amount = 170
+    producer = GER
+}
+add_equipment_to_stockpile = {
+    type = light_tank_equipment
+    amount = 300
+    producer = GER
+}
+		add_opinion_modifier = { target = USA modifier = medium_increase }
+		}
+	}
+
+	focus = {
+		id = GER_guns_from_france
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_deals_us focus = GER_deals_uk }
+		#mutually_exclusive = { focus = GER_deals_uk }
+		x = 19
+		y = 8
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 12000
+    producer = FRA
+}
+		add_opinion_modifier = { target = FRA modifier = medium_increase }
+		}
+	}
+
+	focus = {
+		id = GER_enforce_conscription
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_guns_from_france }
+		#mutually_exclusive = { focus = GER_deals_uk }
+		x = 19
+		y = 9
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		50 = { add_manpower = 5000}
+		53 = { add_manpower = 5000}
+		}
+	}
+
+	focus = {
+		id = GER_4_yr_conscription
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_enforce_conscription }
+		mutually_exclusive = { focus = GER_8_yr_conscription }
+		x = 17
+		y = 10
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_political_power = -50
+		50 = { add_manpower = 10000}
+		53 = { add_manpower = 10000}
+		}
+	}
+
+	focus = {
+		id = GER_8_yr_conscription
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_enforce_conscription }
+		mutually_exclusive = { focus = GER_4_yr_conscription }
+		x = 21
+		y = 10
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_political_power = -200
+		50 = { add_manpower = 20000}
+		53 = { add_manpower = 20000}
+		}
+	}
+
+	focus = {
+		id = GER_deutsch_infrastructure
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_immigrants_france }
+		#mutually_exclusive = { focus = GER_4_yr_conscription }
+		x = 11
+		y = 9
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		  188 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 3
+                    instant_build = yes
+                }
+            }
+             5 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 3
+                    instant_build = yes
+                }
+            }
+		}
+	}
+
+	focus = {
+		id = GER_military_factories
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_deutsch_infrastructure }
+	    mutually_exclusive = { focus = GER_civillian_factories }
+		x = 9
+		y = 10
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		50 = {
+            add_extra_state_shared_building_slots = 15
+            add_building_construction = {
+                type = industrial_complex
+                level = 4
+                instant_build = yes
+                }
+            }
+
+            53 = {
+            add_extra_state_shared_building_slots = 15
+            add_building_construction = {
+                type = industrial_complex
+                level = 4
+                instant_build = yes
+                }
+            }
+
+            69 = {
+            add_extra_state_shared_building_slots = 15
+            add_building_construction = {
+                type = industrial_complex
+                level = 4
+                instant_build = yes
+                }
+            }
+		}
+	}
+
+	focus = {
+		id = GER_civillian_factories 
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_deutsch_infrastructure }
+		mutually_exclusive = { focus = GER_military_factories }
+		x = 13
+		y = 10
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		50 = {
+		add_building_construction = {
+    type = arms_factory
+    level = 5
+    instant_build = yes
+}
+}
+           53 = {
+           add_building_construction = {
+    type = arms_factory
+    level = 5
+    instant_build = yes
+}
+}
+            69 = {
+            add_building_construction = {
+    type = arms_factory
+    level = 5
+    instant_build = yes
+}
+}
+		}
+	}
+
+	focus = {
+		id = GER_aftermath_of_civil_war
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_civillian_factories focus = GER_military_factories focus = GER_8_yr_conscription focus = GER_4_yr_conscription }
+		#mutually_exclusive = { focus = GER_military_factories }
+		available = {
+		GER = {
+		owns_state = 64
+		owns_state = 5
+		owns_state = 54
+		owns_state = 59
+		owns_state = 55
+		owns_state = 63
+		owns_state = 763
+		owns_state = 61
+		owns_state = 42
+		owns_state = 53
+		owns_state = 66
+		owns_state = 52
+		owns_state = 67
+		owns_state = 68
+		owns_state = 51
+		owns_state = 65
+		owns_state = 58
+		owns_state = 60
+		owns_state = 62
+		owns_state = 57
+		owns_state = 56
+		owns_state = 50
+		}
+		}
+		x = 15
+		y = 11
+		cost = 0.1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		country_event = { id = germany.139 }
+		}
+	}
+
+	focus = {
+		id = GER_hitlerite_constitution
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_aftermath_of_civil_war }
+		prerequisite = { focus = GER_elect_hitler }
+		#mutually_exclusive = { focus = GER_military_factories }
+		x = 11
+		y = 12
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = GER_huess_constitution
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_aftermath_of_civil_war }
+		prerequisite = { focus = GER_elect_huess }
+		#mutually_exclusive = { focus = GER_military_factories }
+		x = 19
+		y = 12
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_stability = 0.15
+		}
+	}
+
+	focus = {
+		id = GER_hitlerite_laws
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_hitlerite_constitution }
+		#mutually_exclusive = { focus = GER_military_factories }
+		x = 9
+		y = 13
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+		completion_reward = {
+		add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = GER_hitlerite_council
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_hitlerite_constitution }
+		#mutually_exclusive = { focus = GER_military_factories }
+		x = 13
+		y = 13
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_stability = 0.15
+		}
+	}
+
+	focus = {
+		id = GER_huess_council
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_huess_constitution }
+		#mutually_exclusive = { focus = GER_military_factories }
+		x = 17
+		y = 13
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_stability = 0.15
+		}
+	}
+
+	focus = {
+		id = GER_huess_laws
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_huess_constitution }
+		#mutually_exclusive = { focus = GER_military_factories }
+		x = 21
+		y = 13
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_poliical_power = 50
+		}
+	}
+
+	focus = {
+		id = GER_pass_one_party_policy
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_hitlerite_council focus = GER_hitlerite_laws }
+		#mutually_exclusive = { focus = GER_military_factories }
+		x = 11
+		y = 14
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_poliical_power = 25
+		country_event = { id = germany.140 }
+		}
+	}
+
+	focus = {
+		id = GER_confirm_alliance_us
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_huess_laws focus = GER_huess_council }
+		#mutually_exclusive = { focus = GER_military_factories }
+		x = 19
+		y = 14
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_poliical_power = 25
+		USA = {
+		country_event = { id = usa.65 }
+		}
+		}
+	}
+
+	focus = {
+		id = GER_conservative_leadership
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_pass_one_party_policy }
+		#mutually_exclusive = { focus = GER_military_factories }
+		x = 11
+		y = 15
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_poliical_power = 25
+		}
+	}
+
+	focus = {
+		id = GER_liberal_leadership
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_confirm_alliance_us }
+		#mutually_exclusive = { focus = GER_military_factories }
+		x = 19
+		y = 15
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_poliical_power = 25
+		}
+	}
+
+	focus = {
+		id = GER_elect_kulz
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_liberal_leadership }
+		mutually_exclusive = { focus = GER_elect_luther focus = GER_relect_huess }
+		x = 17
+		y = 16
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_poliical_power = 25
+		create_country_leader = {
+			name = "Wilhelm Kulz"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Wilhelm_Kulz_Portrait.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = GER_elect_luther
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_liberal_leadership }
+		mutually_exclusive = { focus = GER_relect_huess focus = GER_elect_kulz }
+		x = 19
+		y = 16
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_poliical_power = 25
+		create_country_leader = {
+			name = "Hans Luther"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Hans_Luther_Portrait.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = GER_relect_huess
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_liberal_leadership }
+		mutually_exclusive = { focus = GER_elect_luther focus = GER_elect_kulz }
+		x = 21
+		y = 16
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_poliical_power = 25
+		create_country_leader = {
+			name = "Theodor Huess"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Portrait_Theodor_Huess.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = GER_economy_based_leadership
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_elect_kulz }
+		#mutually_exclusive = { focus = GER_elect_luther focus = GER_relect_huess }
+		x = 17
+		y = 17
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		50 = {
+            add_extra_state_shared_building_slots = 15
+            add_building_construction = {
+                type = industrial_complex
+                level = 4
+                instant_build = yes
+                }
+            }
+
+            53 = {
+            add_extra_state_shared_building_slots = 15
+            add_building_construction = {
+                type = industrial_complex
+                level = 4
+                instant_build = yes
+                }
+            }
+
+            69 = {
+            add_extra_state_shared_building_slots = 15
+            add_building_construction = {
+                type = industrial_complex
+                level = 4
+                instant_build = yes
+                }
+            }
+		}
+	}
+
+	focus = {
+		id = GER_industrial_based_leadership
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_elect_luther }
+		#mutually_exclusive = { focus = GER_elect_luther focus = GER_relect_huess }
+		x = 19
+		y = 17
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		50 = {
+            add_extra_state_shared_building_slots = 15
+            add_building_construction = {
+                type = industrial_complex
+                level = 4
+                instant_build = yes
+                }
+            }
+
+            53 = {
+            add_extra_state_shared_building_slots = 15
+            add_building_construction = {
+                type = industrial_complex
+                level = 4
+                instant_build = yes
+                }
+            }
+
+            69 = {
+            add_extra_state_shared_building_slots = 15
+            add_building_construction = {
+                type = industrial_complex
+                level = 4
+                instant_build = yes
+                }
+            }
+		}
+	}
+
+		focus = {
+		id = GER_science_based_leadership
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_relect_huess }
+		#mutually_exclusive = { focus = GER_elect_luther focus = GER_relect_huess }
+		x = 19
+		y = 17
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			    }
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			    }
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			    }
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = GER_elect_schleicher
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_conservative_leadership }
+		mutually_exclusive = { focus = GER_elect_papen focus = GER_relect_hitler }
+		x = 9
+		y = 16
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_poliical_power = 25
+		create_country_leader = {
+			name = "Kurt von Schleicher"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Kurt_von_Schleicher.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = GER_elect_papen
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_conservative_leadership }
+		mutually_exclusive = { focus = GER_relect_hitler focus = GER_elect_schleicher }
+		x = 11
+		y = 16
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_poliical_power = 25
+		create_country_leader = {
+			name = "Franz von Papen"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Franz_von_Papen_Portrait.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = GER_relect_hitler
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_conservative_leadership }
+		mutually_exclusive = { focus = GER_elect_papen focus = GER_elect_schleicher }
+		x = 13
+		y = 16
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_poliical_power = 25
+		create_country_leader = {
+			name = "Adolf Hitler"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "Portrait_Adolf_Hitler.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = GER_military_based_leadership
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_relect_hitler }
+		#mutually_exclusive = { focus = GER_elect_luther focus = GER_relect_huess }
+		x = 13
+		y = 17
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		52 = { add_manpower = 20000}
+		add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 12000
+    producer = GER
+}
+		}
+	}
+
+	focus = {
+		id = GER_anti_industrial_leadershiip
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_elect_papen }
+		#mutually_exclusive = { focus = GER_elect_luther focus = GER_relect_huess }
+		x = 11
+		y = 17
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		50 = {
+            add_extra_state_shared_building_slots = 15
+            add_building_construction = {
+                type = industrial_complex
+                level = 4
+                instant_build = yes
+                }
+            }
+
+            53 = {
+            add_extra_state_shared_building_slots = 15
+            add_building_construction = {
+                type = industrial_complex
+                level = 4
+                instant_build = yes
+                }
+            }
+
+            69 = {
+            add_extra_state_shared_building_slots = 15
+            add_building_construction = {
+                type = industrial_complex
+                level = 4
+                instant_build = yes
+                }
+            }
+		}
+	}
+
+	focus = {
+		id = GER_educational_based_leadership
+		icon = GFX_economic_act
+		prerequisite = { focus = GER_elect_schleicher }
+		#mutually_exclusive = { focus = GER_elect_luther focus = GER_relect_huess }
+		x = 9
+		y = 17
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+		completion_reward = {
+		add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			    }
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			    }
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			    }
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
 			}
 		}
 	}
