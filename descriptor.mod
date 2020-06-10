@@ -1,4 +1,4 @@
-version="1.9.0"
+version="0.1 The Jagow Pact"
 tags={
 	"Alternative History"
 }

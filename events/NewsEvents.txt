@@ -12839,3 +12839,18 @@ news_event = {
 	name = news.2.a
 	}
 }
+
+news_event = {
+	id = news.337
+	title = news.337.t
+	desc = news.337.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.331.a
+	}
+}

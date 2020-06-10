@@ -62,6 +62,72 @@ ideas = {
 				can_create_factions = yes
 			}
 		}
+		
+		building_up_army_for_civ_war = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 4000
+				stability_weekly = -0.01
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+
+		building_up_economy_for_civ_war = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industry_repair_factor = 0.5
+				production_speed_buildings_factor = 0.3
+				production_factory_max_efficiency_factor = 0.3
+				stability_weekly = -0.02
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+
+		aftermath_of_civil_war = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			political_power_gain = 0.5
+			democratic_drift = 0.10
+				stability_weekly = -0.02
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
 
 		weak_economy = {
 			

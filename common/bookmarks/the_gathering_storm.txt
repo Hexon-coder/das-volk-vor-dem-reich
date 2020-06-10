@@ -9,7 +9,7 @@ bookmarks = {
 		
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = neutrality
 			available = { NOT = { has_dlc = "La Resistance" } }
 			ideas = {
 				FRA_victors_of_wwi
@@ -24,7 +24,7 @@ bookmarks = {
 		}
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = neutrality
 			available = { has_dlc = "La Resistance" } 
 			ideas = {
 				FRA_victors_of_wwi
@@ -83,7 +83,7 @@ bookmarks = {
 		}
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = neutrality
 			available = { has_dlc = "Waking the Tiger" }
 			ideas = {
 				sour_loser
@@ -97,7 +97,7 @@ bookmarks = {
 		}
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = neutrality
 			available = { NOT = { has_dlc = "Waking the Tiger" } }
 			ideas = {
 				sour_loser
@@ -123,8 +123,8 @@ bookmarks = {
 			}		
 		}
 		"AUS"={
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = fascism
+			history = "AUS_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas = {
 			}	
 			focuses = {
@@ -132,7 +132,7 @@ bookmarks = {
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = neutrality
 			ideas = {
 				trotskyite_plot
 				home_of_revolution

@@ -6334,3 +6334,130 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = germany.137
+	title = germany.137.t
+	desc = germany.137.d
+	picture = GFX_report_event_economic_funding_act_deutschland
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.137.a
+		add_resource = {
+    type = oil
+    amount = 30
+}
+add_resource = {
+    type = aluminium
+    amount = 30
+}
+add_resource = {
+    type = rubber
+    amount = 30
+}
+add_resource = {
+    type = tungsten
+    amount = 30
+}
+add_resource = {
+    type = steel
+    amount = 30
+}
+add_resource = {
+    type = chromium
+    amount = 30
+}
+	    }
+	}
+
+country_event = {
+	id = germany.138
+	title = germany.138.t
+	desc = germany.138.d
+	picture = GFX_report_event_military_funding act_deutschland
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.138.a
+		add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 3100
+    producer = GER
+}
+add_equipment_to_stockpile = {
+    type = motorized_equipment
+    amount = 170
+    producer = GER
+}
+add_equipment_to_stockpile = {
+    type = heavy_tank_equipment
+    amount = 170
+    producer = GER
+}
+add_equipment_to_stockpile = {
+    type = medium_tank_equipment
+    amount = 170
+    producer = GER
+}
+add_equipment_to_stockpile = {
+    type = light_tank_equipment
+    amount = 300
+    producer = GER
+}
+	    }
+	}
+
+country_event = {
+	id = germany.139
+	title = germany.139.t
+	desc = germany.139.d
+	picture = GFX_report_event_military_funding act_deutschland
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.139.a
+		add_ideas = {
+		aftermath_of_civil_war
+		}
+	    }
+	}
+
+	country_event = {
+	id = germany.140
+	title = germany.140.t
+	desc = germany.140.d
+	picture = GFX_report_event_military_funding act_deutschland
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.140.a
+		set_popularities = {
+	authoritarianism = 0
+	democratic = 100
+	communism = 0
+	}
+	    }
+	}
+
+	country_event = {
+	id = germany.141
+	title = germany.141.t
+	desc = germany.141.d
+	picture = GFX_report_event_military_funding act_deutschland
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.141.a
+	    }
+	}
+

@@ -1,0 +1,33 @@
+state={
+	id=797
+	name="STATE_797"
+
+	history={
+		add_core_of = DES
+		owner = DES
+		buildings = {
+			infrastructure = 2
+			air_base = 3
+			
+			12240 = {
+				naval_base = 3
+
+			}
+			
+			12237 = {
+				naval_base = 3
+			}
+
+		}
+		victory_points = {
+			12237 5
+		}
+
+	}
+
+	provinces={
+		1389 4393 5135 7365 7614 10423 10251 11004 11018 12154 12193 12237 12240 12400 12428 
+	}
+	manpower=577000
+	buildings_max_level_factor=1.000
+}
