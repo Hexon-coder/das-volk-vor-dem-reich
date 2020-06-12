@@ -1,0 +1,62 @@
+ideas = {
+
+	country = {
+		GRE_the_greek_miracle = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			pictire =
+				
+			modifier = {
+				consumer_goods_factor = -0.20
+				politcal_power_gain = 0.50
+				add_stability = 0.10
+			}
+		}
+ 
+         	GRE_victors_of_the_balkan_war = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.25
+				add_war_support = 0.10
+				conscription_factor = 0.05
+			}
+		}
+
+		GRE_the_megali_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.02
+				add_war_support = 0.1 
+			}
+		}
+     }
+}

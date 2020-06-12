@@ -1,0 +1,13 @@
+spriteTypes = {
+  
+  spriteType = {
+		name = "GFX_ideology_conservatism"
+		texturefile = "gfx/interface/ideologies/conservatism.dds"
+	}
+  
+  spriteType = {
+		name = "GFX_ideology_socialism"
+		texturefile = "gfx/interface/ideologies/social_democracy.dds"
+	}
+	
+}

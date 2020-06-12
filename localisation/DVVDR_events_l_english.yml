@@ -1,0 +1,19 @@
+﻿l_english:
+ ############################### News-Events #########################################
+
+ news.1.t:0 "Assassination of the Kaiser!"
+ news.1.d:0 "At 14:22 the Kaiser of Germany was shot three times once in the head and twice in the body. The assassin was a man named Jakob Schmidt a former member of the KPD who were previously banned by the Kaiser himself two years ago, but there have been rumors that the KPD is still operating. Schmidt was beaten to death by several of the Kaiser's guards in several days they will crown the new Kaiser."
+ news.1.a:0 "My God Some People Are Ruthless"
+ news.2.t:0 "German Revolution"
+ news.2.d:0 "After the Kaiser's assasination there were riots in the streets of Germany people getting shot, there were bodies lying everywhere people instantly had to choose the side they were on the Communists or the Monarchy's side people who were found with communist symbols in their house were arrested or just shot on the spot. It was a CIVIL WAR the Communists were sick and tired of the useless Monarchy, the leader of the KPD is Ernst Thälmann. The Communists who had planned this uprising shot at a group of police at the motorcade where the Kaiser had been shot, only seconds after the assassination. Will this be the end of the Monarchy?..."
+ news.2.a:0 "Will There Ever Be Peace?"
+
+ ############################### China ###############################
+
+ qing.1.t:0 "China seeks to join the Entente"
+ qing.1.d:0 "Following the recent democratic takeover in china it lost it's place in the Kaiserbund and ever since it has been searching for allies."
+ qing.1.a:0 "Accept"
+ qing.1.b:0 "Refuse"
+ qing.2.t:0 "Assassination of the Xuantong Emperor";
+ qing.2.d:0 "An attempt on the life of His Imperial Majesty the Emperor of the Great Qing Dynasty, Son of Heaven, Lord of Ten Thousand Years has not been successful for over a millennium, and yet it has been now."
+ qing.2.a:0 "Provisional Government shall take over the government."

@@ -1,0 +1,81 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_Transylvania_crisis"
+		texturefile = "gfx/interface/ideas/Transylvania_crisis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_angry_nationalists"
+		texturefile = "gfx/interface/ideas/angry_nationalists.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_unstable_goverment"
+		texturefile = "gfx/interface/ideas/unstable_goverment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_pro_nationalist_army"
+		texturefile = "gfx/interface/ideas/national_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_impending_crackdown"
+		texturefile = "gfx/interface/ideas/impending_crackdown.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_idea_focus_national_security_council"
+		texturefile = "gfx/interface/ideas/focus_national_security_council.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_focus_judicial_yuan"
+		texturefile = "gfx/interface/ideas/focus_judicial_yuan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_focus_control_yuan"
+		texturefile = "gfx/interface/ideas/focus_control_yuan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_focus_examination_yuan"
+		texturefile = "gfx/interface/ideas/focus_examination_yuan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_focus_executive_yuan"
+		texturefile = "gfx/interface/ideas/focus_executive_yuan.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_focus_chi_legislative_yuan"
+		texturefile = "gfx/interface/ideas/focus_chi_legislative_yuan.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_unstable_goverment"
+		texturefile = "gfx/interface/ideas/unstable_goverment.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_pro_nationalist_army"
+		texturefile = "gfx/interface/ideas/national_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_impending_crackdown"
+		texturefile = "gfx/interface/ideas/impending_crackdown.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_we_will_never_surrender_n"
+		texturefile = "gfx/interface/ideas/we_will_never_surrender_n.dds"
+	}
+    SpriteType = {
+		name = "GFX_idea_we_will_never_surrender_r"
+		texturefile = "gfx/interface/ideas/we_will_never_surrender_r.dds"
+	}
+	 SpriteType = {
+		name = "GFX_incompetent_general_staff"
+		texturefile = "gfx/interface/ideas/incompetent_general_staff.dds"
+	}
+	 SpriteType = {
+		name = "GFX_down_with_monarchism"
+		texturefile = "gfx/interface/ideas/down_with_monarchism.dds"
+	}
+	SpriteType = {
+		name = "GFX_weak_economy"
+		texturefile = "gfx/interface/ideas/weak_economy.dds"
+	}
+}
