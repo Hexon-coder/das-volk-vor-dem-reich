@@ -138,8 +138,9 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
+	communism = 10
 	democratic = 10
-	authoritarianism = 90
+	authoritarianism = 80
 }
 
 set_convoys = 20
@@ -166,7 +167,7 @@ set_stability = 0.55
 
 	create_country_leader = {
 		name = "Abdulmejid II"
-		desc = "POLITICS_ISMET_INÖNÜ_DESC"
+		desc = "POLITICS_ABDULMEJID_II_DESC"
 		picture = "Abdlumejd_II_Leader_Portrait.dds"
 		expire = "1965.1.1"
 		ideology = monarchy
