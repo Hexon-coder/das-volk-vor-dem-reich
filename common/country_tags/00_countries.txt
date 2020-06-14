@@ -210,3 +210,4 @@ RRU = "countries/Revolutionary Russia"
 SSR = "countries/Social-Revolutionary Russia"
 RFR = "countries/Russian Federal Republic"
 RSF = "countries/Russian SFSR"
+HJZ = "countries/Hejaz.txt
