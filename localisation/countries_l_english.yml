@@ -3117,3 +3117,27 @@ RFR_democratic:0 "Russian Federal Republic"
 RFR_democratic_ADJ:0 "Russian"
 RSF_communism:0 "Russia SFSR"
 RSF_communism_ADJ:0 "Russian"
+
+
+############# TURKEY #############
+HJZ_democratic:0 "Republic of Hejaz"
+HJZ_democratic_DEF:0 "The Republic of Hejaz"
+HJZ_democratic_ADJ:0 "Hejazi"
+
+HJZ_communism:0 "Worker's Republic of Hejaz"
+HJZ_communism_DEF:0 "Islamic Worker's Republic of Hejaz"
+HJZ_communism_ADJ:0 "Hejazi"
+
+HJZ_authoritarianism:0 "Kingdom of Hejaz"
+HJZ_authoritarianism_DEF:0 "The Kingdom and Sharifate of Hejaz"
+HJZ_authoritarianism_ADJ:0 "Hejazi"
+
+HJZ_TUR_subject:0 "Vilayet of Hejaz"
+HJZ_TUR_subject_DEF:0 "The Vilayet of Hejaz & The Sharifate of Mecca"
+HJZ_TUR_subject_ADJ:0 "Hejazi"
+
+
+
+
+
+
